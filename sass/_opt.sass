@@ -1,0 +1,519 @@
+.opt
+    padding-top: 40px
+    &__title
+        margin-top: 0
+        margin-bottom: 40px
+        font-weight: 300
+        font-size: 28px
+        line-height: 121.3%
+        text-transform: uppercase
+        color: #282828
+    &__text
+        font-weight: 300
+        font-size: 14px
+        line-height: 156%
+        color: #282828
+        margin-bottom: 62px
+    &__subtitle
+        margin-top: 0
+        margin-bottom: 45px
+        font-weight: 700
+        font-size: 18px
+        line-height: 156%
+        text-transform: uppercase
+        color: #282828
+        &2
+            margin-bottom: 8px
+    &__wrap
+        display: grid
+        grid-template-columns: repeat(2, 1fr)
+        grid-gap: 20px 35px
+        margin-bottom: 70px
+    &__block
+        border: 1px solid #D2D2D2
+        padding: 0 45px
+        padding-top: 19px
+        padding-bottom: 28px
+        display: flex
+        flex-direction: column
+        align-items: center
+    &__img
+        margin-bottom: 23px
+        width: 40px
+        height: 40px
+        display: flex
+        justify-content: center
+        align-items: center
+    &__name
+        font-weight: 300
+        font-size: 14px
+        line-height: 14px
+        text-align: center
+        letter-spacing: 0.075em
+        text-transform: uppercase
+        color: #282828
+        margin-bottom: 26px
+    &__descr
+        font-weight: 300
+        font-size: 14px
+        line-height: 144%
+        text-align: center
+        letter-spacing: 0.07em
+        color: #282828
+    &__list
+        margin: 0
+        font-weight: 300
+        font-size: 14px
+        line-height: 156%
+        color: #282828
+        padding-left: 20px
+        li
+            padding: 9px 0
+            &::marker
+                display: none
+    &__form
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+        margin-top: 50px
+        padding: 15px 40px
+        padding-bottom: 45px
+        background: #F8F8F8
+        &-last
+            width: 562px
+            max-width: 100%
+            display: flex
+            align-items: center
+            justify-content: space-between
+            grid-gap: 35px
+            button
+                width: 157px
+                height: 32px
+                background: #1D1D1B
+                border: 0px solid #1D1D1B
+                cursor: pointer
+                font-weight: 300
+                font-size: 12px
+                line-height: 148.8%
+                letter-spacing: 0.075em
+                color: #fff
+                transition: all 0.3s
+                &:hover
+                    color: #fff
+                    background-color: #868686
+            .check
+                width: 225px
+                position: relative
+                display: flex
+                align-items: center
+                grid-gap: 5px
+                justify-content: space-between
+                input
+                    width: 0
+                    height: 0
+                    opacity: 0
+                    position: absolute
+                    top: 0
+                    left: 0
+                    padding: 0
+                    margin: 0
+                    overflow: hidden
+                    &+span
+                        width: 20px
+                        height: 20px
+                        border: 1px solid #868686
+                        display: block
+                    &:checked + span
+                        background: url('../img/opt-check.svg') 48% 52% no-repeat
+                p
+                    max-width: 190px
+                    font-weight: 300
+                    font-size: 11px
+                    line-height: 120.3%
+                    letter-spacing: 0.045em
+                    color: #868686
+                    margin: 0
+                    a
+                        color: #868686
+    &__right
+        width: 45%
+        textarea
+            width: 562px
+            max-width: 100%
+            height: 82px
+            border: 1px solid #868686
+            background: transparent
+            padding: 16px 17px
+            font-style: normal
+            font-weight: 300
+            font-size: 14px
+            line-height: 148.8%
+            letter-spacing: 0.075em
+            font-family: 'HelveticaNeueCyr'
+            resize: none
+            margin-bottom: 40px
+            &:focus
+                outline: none
+    &__textareaname
+        margin-bottom: 3px
+        font-weight: 300
+        font-size: 12px
+        line-height: 148.8%
+        letter-spacing: 0.075em
+        color: #868686
+    &__left
+        width: 50%
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+        &>input
+            width: 250px
+            max-width: 48%
+            padding: 1px 9px
+            padding-left: 0
+            border: 0
+            border-bottom: 1px solid #868686
+            font-weight: 300
+            font-size: 14px
+            line-height: 148.8%
+            letter-spacing: 0.075em
+            margin-bottom: 45px
+            background-color: transparent
+.about
+    padding: 25px 0
+    &__title
+        font-weight: 300
+        font-size: 23px
+        line-height: 121.3%
+        margin-bottom: 24px
+        color: #282828
+        margin-top: 0
+    &__main
+        display: flex
+        grid-gap: 30px
+        margin-bottom: 35px
+    &__quote
+        border: 1px solid #1D1D1B
+        border-left: 0
+        border-right: 0
+        padding: 30px 0
+        margin-bottom: 35px
+        p
+            margin: 0
+            font-weight: 300
+            font-size: 28px
+            line-height: 128%
+            color: #1D1D1B
+            max-width: 900px
+    &__bot
+        p
+            margin-top: 0
+            margin-bottom: 35px
+            font-weight: 300
+            font-size: 18px
+            line-height: 128.5%
+            color: #282828
+        img
+            display: block
+            margin-bottom: 35px
+            max-width: 100%
+    &__img
+        width: 420px
+    &__text
+        width: calc(100% - 450px)
+        h2
+            margin-top: 0
+            font-weight: 300
+            font-size: 35px
+            line-height: 128.5%
+            color: #1D1D1B
+            margin-bottom: 40px
+            span
+                position: relative
+                padding-right: 40px
+            img
+                margin-bottom: -3px
+        p
+            margin-top: 0
+            margin-bottom: 35px
+            font-weight: 300
+            font-size: 18px
+            line-height: 128.5%
+            color: #282828
+.contacts
+    padding-top: 30px
+    padding-bottom: 25px
+    &__title
+        font-weight: 700
+        font-size: 18px
+        line-height: 121.3%
+        color: #282828
+        margin-bottom: 24px
+        margin-top: 0
+    &__wrap
+        display: flex
+        align-items: center
+        margin-bottom: 50px
+        a
+            width: 25%
+            display: flex
+            align-items: center
+            grid-gap: 13px
+            text-decoration: none
+            font-weight: 400
+            font-size: 14px
+            line-height: 156%
+            text-decoration: none
+            color: #282828
+            &:hover
+                opacity: 0.8
+    &__small
+        display: block
+        margin-bottom: 45px
+        span
+            display: block
+            margin-bottom: 8px
+            font-weight: 400
+            font-size: 14px
+            line-height: 156%
+            color: #1D1D1B
+        a
+            width: 50%
+            display: flex
+            align-items: center
+            grid-gap: 13px
+            text-decoration: none
+            font-weight: 400
+            font-size: 14px
+            line-height: 156%
+            text-decoration-line: underline
+            color: #282828
+            &:first-child
+                text-decoration: none
+            &:hover
+                opacity: 0.8
+    &__icon
+        display: flex
+    &__form
+        padding-top: 10px
+        display: flex
+        align-items: center
+        flex-wrap: wrap
+        grid-gap: 42px 47px
+        &>input
+            width: 266px
+            max-width: 24%
+            padding: 1px 9px
+            padding-left: 0
+            border: 0
+            border-bottom: 1px solid #868686
+            font-weight: 300
+            font-size: 14px
+            line-height: 148.8%
+            letter-spacing: 0.075em
+        button
+            display: inline-block
+            border: 0px solid #1D1D1B
+            cursor: pointer
+            background-color: transparent
+            font-weight: 400
+            font-size: 12px
+            line-height: 148.8%
+            letter-spacing: 0.075em
+            color: #fff
+            transition: all 0.3s
+            padding: 8px 15px
+            background: #1D1D1B
+            &:hover
+                color: #fff
+                background-color: #868686
+        &-last
+            width: 100%
+            max-width: 100%
+            .check
+                width: 100%
+                position: relative
+                display: flex
+                align-items: center
+                grid-gap: 12px
+                justify-content: space-between
+                margin-bottom: 18px
+                input
+                    width: 0
+                    height: 0
+                    opacity: 0
+                    position: absolute
+                    top: 0
+                    left: 0
+                    padding: 0
+                    margin: 0
+                    overflow: hidden
+                    &+span
+                        width: 20px
+                        height: 20px
+                        border: 1px solid #868686
+                        display: block
+                    &:checked + span
+                        background: url('../img/opt-check.svg') 48% 52% no-repeat
+                p
+                    width: calc(100% - 32px)
+                    font-weight: 300
+                    font-size: 11px
+                    line-height: 120.3%
+                    letter-spacing: 0.045em
+                    color: #868686
+                    margin: 0
+                    a
+                        color: #868686
+                        text-decoration: none
+                        border-bottom: 1px solid #868686
+.faq
+    padding-top: 35px
+    padding-bottom: 20px
+    &__block
+        margin-bottom: 28px
+    &__cont
+        display: none
+        padding-top: 18px
+        p
+            margin-top: 0
+            margin-bottom: 20px
+        b
+            font-weight: 550
+    &__name
+        font-weight: 700
+        font-size: 18px
+        text-transform: uppercase
+        line-height: 148%
+        letter-spacing: -0.015em
+        color: #282828
+        padding-left: 20px
+        position: relative
+        &::before
+            content: ""
+            width: 12px
+            height: 12px
+            position: absolute
+            left: 0
+            top: 7px
+            background: url('../img/faq-plus.svg') center no-repeat
+    &__block.active
+        .faq__cont
+            display: block
+            padding-left: 0px
+            margin-bottom: 22px
+        .faq__name
+            &::before
+                background: url('../img/faq-minus.svg') center no-repeat
+@media(max-width: 1239px)
+    .opt
+        &__right
+            textarea
+                margin-bottom: 20px
+        &__form
+            &-last
+                width: 100%
+                max-width: 100%
+                padding-top: 0px
+                display: block
+                button
+                    margin-top: 15px
+@media(max-width: 991px)
+    .opt
+        &__left
+            width: 100%
+        &__right
+            width: 100%
+        &__form
+            display: block
+            textarea
+                width: 100%
+                max-width: 100%
+        &__wrap
+            grid-template-columns: repeat(1, 1fr)
+    .contacts
+        &__small, &__wrap
+            flex-direction: column
+            margin-bottom: 45px
+            a
+                width: 100%
+                margin-bottom: 15px
+                align-items: flex-start
+        &__icon
+            width: 22px
+            height: 22px
+            align-items: center
+            display: flex
+            justify-content: center
+        &__form
+            display: block
+            &>input
+                width: 100%
+                max-width: 100%
+                margin-bottom: 35px
+            button
+                margin-top: 15px
+            &-last
+                width: 100%
+                max-width: 100%
+                .check
+                    width: 100%
+                    justify-content: flex-start
+                    grid-gap: 10px
+                    p
+                        max-width: calc(100% - 60px)
+    .about
+        &__main
+            display: block
+        &__img
+            margin-bottom: 40px
+        &__text
+            width: 100%
+@media(max-width: 767px)
+    .opt
+        &__form
+            &>input
+                width: 100%
+                max-width: 100%
+                margin-bottom: 35px
+@media(max-width: 575px)
+    .opt
+        &__form
+            padding: 0
+            background-color: transparent
+        &__left
+            &>input
+                width: 100%
+                max-width: 100%
+                margin-bottom: 30px
+        &__block
+            padding-left: 20px
+            padding-right: 20px
+        &__form
+            button
+                width: 100%
+                margin-bottom: 28px
+            &-last
+                display: block
+    .about
+        &__img
+            width: 100%
+            img
+                width: 100%
+        &__text
+            h2
+                font-size: 30px
+                line-height: 128.5%
+                margin-bottom: 40px
+            p
+                font-size: 18px
+                line-height: 128.5%
+                margin-bottom: 40px
+        &__bot
+            img
+                height: 215px
+                object-fit: cover
+@media(max-width: 359px)
+    .opt
+        &__title
+            font-size: 24px

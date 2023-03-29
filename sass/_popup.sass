@@ -1,0 +1,848 @@
+.overlay
+    width: 100vw
+    height: 100vh
+    position: fixed
+    top: 0
+    left: 0
+    background-color: rgba(0, 0, 0, .502)
+    z-index: 11
+    display: none
+    justify-content: center
+    align-items: center
+    &-active
+        display: flex
+    &-search
+        width: 100vw
+        height: 100vh
+        position: fixed
+        top: 0
+        left: 0
+        background-color: rgba(0, 0, 0, .502)
+        z-index: 11
+        display: none
+        &.active
+            display: block
+    &-cart
+        width: 100vw
+        height: 100vh
+        position: fixed
+        top: 0
+        left: 0
+        background-color: rgba(0, 0, 0, .502)
+        z-index: 11
+        display: none
+        &.active
+            display: block
+    &-add
+        .popup
+            width: 568px
+            max-width: 95vw
+            background: #FFFFFF
+            padding: 60px 80px
+    &-stock
+        .popup
+            width: 568px
+            max-width: 95vw
+            background: #FFFFFF
+            position: relative
+            padding: 45px
+            padding-bottom: 62px
+    &-start
+        &__img
+            display: flex
+            justify-content: center
+            margin-bottom: 70px
+        &__title
+            font-weight: 700
+            font-size: 18px
+            line-height: 133.5%
+            text-align: center
+            letter-spacing: -0.02em
+            text-transform: uppercase
+            color: #1D1D1B
+        &__subtitle
+            font-weight: 300
+            font-size: 18px
+            line-height: 133.5%
+            text-align: center
+            letter-spacing: -0.02em
+            margin-bottom: 44px
+            color: #1D1D1B
+        &__btns
+            display: flex
+            align-items: center
+            justify-content: center
+            grid-gap: 17px
+            button
+                cursor: pointer
+                width: 148px
+                height: 32px
+                background: #1D1D1B
+                border: 0
+                font-weight: 300
+                font-size: 12px
+                line-height: 14px
+                letter-spacing: 0.075em
+                text-transform: uppercase
+                color: #FFFFFF
+                transition: all 0.3s
+                &:hover
+                    background: #868686
+.stock
+    &__close
+        position: absolute
+        top: 33px
+        right: 35px
+        cursor: pointer
+    &__cont
+        width: 50%
+        padding: 28px 80px
+    &__img
+        width: 50%
+        height: 475px
+        img
+            width: 100%
+            height: 100%
+            object-fit: cover
+    &__title
+        margin-bottom: 29px
+        font-weight: 300
+        font-size: 28px
+        line-height: 121.3%
+        color: #1D1D1B
+    &__subtitle
+        font-weight: 300
+        font-size: 18px
+        line-height: 118%
+        letter-spacing: -0.02em
+        text-transform: uppercase
+        color: #1D1D1B
+        margin-bottom: 25px
+    &__form
+        width: 266px
+        &>input
+            width: 100%
+            padding: 1px 9px
+            border: 0
+            border-bottom: 1px solid #868686
+            font-weight: 300
+            font-size: 14px
+            line-height: 148.8%
+            letter-spacing: 0.075em
+            margin-bottom: 34px
+        button
+            width: 100%
+            height: 67px
+            border: 1px solid #1D1D1B
+            cursor: pointer
+            background-color: transparent
+            font-weight: 300
+            font-size: 14px
+            line-height: 148.8%
+            letter-spacing: 0.075em
+            color: #1D1D1B
+            transition: all 0.3s
+            margin-bottom: 29px
+            margin-top: -20px
+            &:hover
+                color: #fff
+                background-color: #1D1D1B
+        .check
+            width: 225px
+            position: relative
+            display: flex
+            align-items: center
+            grid-gap: 5px
+            justify-content: space-between
+            input
+                width: 0
+                height: 0
+                opacity: 0
+                position: absolute
+                top: 0
+                left: 0
+                padding: 0
+                margin: 0
+                overflow: hidden
+                &+span
+                    width: 20px
+                    height: 20px
+                    border: 1px solid #868686
+                    display: block
+                &:checked + span
+                    background: url('../img/opt-check.svg') 48% 52% no-repeat
+            p
+                max-width: 181px
+                font-weight: 300
+                font-size: 11px
+                line-height: 120.3%
+                letter-spacing: 0.045em
+                color: #868686
+                margin: 0
+.add
+    &__close
+        width: 40px
+        height: 40px
+        display: flex
+        justify-content: center
+        align-items: center
+        margin: 0 auto
+        margin-bottom: 35px
+    &__text
+        font-weight: 700
+        font-size: 18px
+        line-height: 133.5%
+        letter-spacing: -0.02em
+        color: #1D1D1B
+        margin-bottom: 43px
+        text-transform: uppercase
+        text-align: center
+    &__bottom
+        display: flex
+        align-items: center
+        grid-gap: 17px
+    &__check
+        background: #1D1D1B
+        border: 1px solid #1D1D1B
+        padding: 9px
+        width: 50%
+        display: flex
+        justify-content: center
+        align-items: center
+        font-weight: 300
+        font-size: 12px
+        line-height: 148.8%
+        letter-spacing: 0.075em
+        color: #FFFFFF
+        text-decoration: none
+        &:hover
+            background: transparent
+            color: #1D1D1B
+    &__more
+        padding: 9px
+        width: 50%
+        display: flex
+        justify-content: center
+        align-items: center
+        font-weight: 300
+        font-size: 12px
+        line-height: 148.8%
+        letter-spacing: 0.075em
+        color: #1D1D1B
+        border: 1px solid #1D1D1B
+        background: #1D1D1B
+        color: #FFFFFF
+        text-decoration: none
+        &:hover
+            background: transparent
+            color: #1D1D1B
+.ncart
+    padding: 70px 0
+    &__wrap
+        display: flex
+        justify-content: space-between
+        grid-gap: 30px
+    &__main
+        width: 465px
+    &__left
+        width: 550px
+    &-promo
+        padding-top: 15px
+        &__start
+            font-weight: 300
+            font-size: 14px
+            line-height: 148.8%
+            letter-spacing: 0.075em
+            text-decoration: none
+            color: #1D1D1B
+            border-bottom: 1px solid #1D1D1B
+            &.hide
+                display: none
+        &__title
+            font-weight: 300
+            font-size: 14px
+            line-height: 148.8%
+            letter-spacing: 0.075em
+            color: #1D1D1B
+            margin-bottom: 6px
+        &__show
+            display: none
+            &.show
+                display: block
+        &__ans
+            font-weight: 400
+            font-size: 14px
+            line-height: 148.8%
+            letter-spacing: 0.075em
+            color: #1D1D1B
+        &__form
+            width: 202px
+            height: 30px
+            position: relative
+            margin-bottom: 2px
+            input
+                width: 100%
+                height: 100%
+                padding: 2px 12px
+                border: 0.5px solid #1D1D1B
+                font-weight: 300
+                font-size: 12px
+                line-height: 148.8%
+                letter-spacing: 0.075em
+                color: #1D1D1B
+            button
+                background: #1D1D1B
+                border: 0
+                width: 43px
+                height: 100%
+                position: absolute
+                top: 0
+                right: 0
+                display: flex
+                justify-content: center
+                align-items: center
+                cursor: pointer
+                &:hover
+                    background: #868686
+.cart
+    width: 675px
+    height: 100vh
+    padding: 75px 60px
+    overflow-y: scroll
+    margin-left: auto
+    margin-right: 0
+    background-color: #fff
+    &__form
+        background: #F8F8F8
+        padding: 40px
+        padding-top: 25px
+    &__top
+        display: flex
+        align-items: center
+        justify-content: space-between
+        margin-bottom: 75px
+        .cart__title
+            margin-bottom: 0
+    &__close
+        cursor: pointer
+        img
+            transition: all 0.3s
+        &:hover
+            img
+                transform: scale(1.1)
+    &__title
+        font-weight: 700
+        font-size: 16px
+        line-height: 121.3%
+        letter-spacing: 0.02em
+        text-transform: uppercase
+        color: #1D1D1B
+        margin-bottom: 18px
+        margin-top: 0
+    &-main
+        &__block
+            padding: 30px 0
+            display: flex
+            align-items: flex-start
+            position: relative
+            border-bottom: 1px solid #000000
+            &:first-child
+                padding-top: 0
+                .cart-main__del
+                    top: 0
+        &__img
+            width: 250px
+            height: 175px
+            margin-right: 25px
+            position: relative
+            img
+                width: 100%
+                height: 100%
+                object-fit: cover
+        &__cont
+            width: 240px
+        &__name
+            font-size: 18px
+            line-height: 123%
+            letter-spacing: 0.025em
+            text-transform: uppercase
+            color: #1D1D1B
+            margin-bottom: 3px
+            text-decoration: none
+        &__descr
+            margin-bottom: 11px
+            font-size: 12px
+            line-height: 148.8%
+            letter-spacing: -0.02em
+            color: #1D1D1B
+        &__price
+            font-size: 23px
+            line-height: 148.8%
+            letter-spacing: -0.02em
+            color: #1D1D1B
+            margin-bottom: 34px
+            font-weight: 700
+            span
+                display: none
+                font-family: 'ALS Rubl'
+        &__bottom
+            display: flex
+            align-items: center
+            justify-content: space-between
+            position: absolute
+            bottom: 30px
+            right: 0
+            span
+                font-size: 18px
+                line-height: 148.8%
+                letter-spacing: -0.02em
+                color: #ABABAB
+                display: none
+        &__count
+            display: flex
+            align-items: center
+            input::-webkit-outer-spin-button, input::-webkit-inner-spin-button
+                -webkit-appearance: none
+            input
+                width: 36px
+                text-align: center
+                padding: 0
+                appearance: none
+                background-color: transparent
+                border: 0
+                font-size: 27px
+                line-height: 148.8%
+                letter-spacing: -0.02em
+                color: #1D1D1B
+            button
+                padding: 5px
+                background-color: transparent
+                cursor: pointer
+                border: 0
+                display: flex
+                align-items: center
+                height: 20px
+        &__del
+            position: absolute
+            top: 29px
+            right: 0
+            width: 12px
+            height: 12px
+            display: flex
+            cursor: pointer
+            img
+                transition: all 0.3s
+                max-width: 100%
+            &:hover
+                img
+                    transform: scale(1.1)
+    &-sum
+        padding: 30px 0
+        border-bottom: 1px solid #000000
+        display: flex
+        align-items: center
+        justify-content: space-between
+        &__title
+            font-size: 25px
+            line-height: 121.3%
+            letter-spacing: 0.02em
+            color: #1D1D1B
+        &__price
+            font-size: 25px
+            line-height: 148.8%
+            text-align: right
+            letter-spacing: -0.02em
+            color: #1D1D1B
+            span
+                font-family: 'ALS Rubl'
+            .old
+                display: inline-block
+                transform: translateY(-2px)
+                text-decoration-line: line-through
+                font-size: 20px
+                margin-right: 30px
+    &__promo
+        padding: 30px 0
+        border-bottom: 1px solid #000000
+        display: flex
+        justify-content: space-between
+        align-items: center
+        position: relative
+        span
+            font-size: 14px
+            line-height: 148.8%
+            letter-spacing: 0.025em
+            color: #868686
+            position: absolute
+            left: 0
+            bottom: 5px
+        input
+            padding: 18px 0
+            border: 0
+            border-bottom: 1px solid #000000
+            width: 265px
+            font-size: 14px
+            line-height: 148.8%
+            letter-spacing: 0.075em
+            font-family: 'HelveticaNeueCyr'
+        button
+            cursor: pointer
+            width: 226px
+            height: 58px
+            border: 1px solid #1D1D1B
+            background-color: transparent
+            font-size: 14px
+            line-height: 148.8%
+            letter-spacing: 0.075em
+            color: #1D1D1B
+            transition: all 0.3s
+            &:hover
+                color: #fff
+                background-color: #1D1D1B
+    &__block
+        padding: 30px 0
+        padding-top: 0
+    &__contact
+        display: block
+        flex-wrap: wrap
+        justify-content: space-between
+        grid-gap: 45px 0
+        input
+            width: 267px
+            max-width: 100%
+            background-color: transparent
+            box-shadow: none
+            font-size: 14px
+            line-height: 148.8%
+            letter-spacing: 0.075em
+            padding: 1px 0
+            border: 0
+            margin-bottom: 10px
+            border-bottom: 1px solid #868686
+    &__check
+        padding-top: 8px
+        display: flex
+        align-items: flex-start
+        position: relative
+        p
+            margin: 0
+            max-width: calc(100% - 34px)
+            font-size: 12px
+            line-height: 20px
+            letter-spacing: 0.075em
+            color: #868686
+            span
+                display: block
+                color: #000000
+                margin-bottom: -5px
+            b
+                font-family: 'ALS Rubl'
+                font-weight: 400
+        input
+            position: absolute
+            top: 0
+            left: 0
+            opacity: 0
+            & + span
+                width: 20px
+                height: 20px
+                border: 1px solid #868686
+                margin-right: 14px
+                padding-right: 3px
+                padding-top: 2px
+            &:checked + span
+                background: url('../img/checked.svg') center no-repeat
+    &__search
+        position: relative
+        width: 265px
+        &-top
+            border: 1px solid #868686
+            width: 265px
+            height: 36px
+            padding: 15px
+            display: flex
+            align-items: center
+            font-size: 14px
+            line-height: 121.3%
+            letter-spacing: 0.075em
+            color: #868686
+            position: relative
+            cursor: pointer
+            &::after
+                content: ""
+                display: block
+                width: 6px
+                height: 12px
+                top: 11px
+                right: 18px
+                position: absolute
+                transition: all 0.3s
+                background: url('../img/drop.svg') center no-repeat
+            &.active
+                &::after
+                    transform: rotate(180deg)
+        &-drop
+            position: absolute
+            top: calc(100% - 1px)
+            left: 0
+            background: #FFFFFF
+            border: 1px solid #868686
+            border-top: 0
+            width: 265px
+            padding: 5px 15px
+            display: none
+            &.active
+                display: block
+            a
+                display: block
+                padding: 9px 0
+                font-size: 14px
+                line-height: 121.3%
+                letter-spacing: 0.075em
+                color: #868686
+                text-decoration: none
+                &:hover
+                    color: #9FC64F
+    &__conn
+        display: flex
+        justify-content: space-between
+        align-items: center
+        label
+            width: 35%
+            &:first-child
+                width: 60%
+    &-end
+        padding: 35px 0
+        padding-top: 0px
+        display: flex
+        align-items: center
+        justify-content: space-between
+        &__title
+            font-weight: 700
+            font-size: 16px
+            line-height: 148.8%
+            letter-spacing: 0.075em
+            text-transform: uppercase
+            color: #1D1D1B
+        &__price
+            font-weight: 700
+            font-size: 16px
+            line-height: 148.8%
+            letter-spacing: 0.075em
+            text-transform: uppercase
+            color: #1D1D1B
+            width: 35%
+            span
+                font-family: 'ALS Rubl'
+        &__btn
+            padding: 6px
+            width: 100%
+            font-weight: 300
+            background: #1D1D1B
+            font-size: 12px
+            line-height: 148.8%
+            letter-spacing: 0.075em
+            text-transform: uppercase
+            color: #FFFFFF
+            cursor: pointer
+            border: 0px solid #1D1D1B
+            transition: all 0.3s
+            &:hover
+                color: #fff
+                background: #868686
+.search
+    background-color: #fff
+    padding: 25px 60px
+    &__close
+        margin: 0 auto
+        margin-bottom: 10px
+        width: 30px
+        height: 30px
+        display: flex
+        justify-content: center
+        align-items: center
+        cursor: pointer
+    &__form
+        position: relative
+        input
+            padding: 25px 0
+            border: 0
+            border-bottom: 1px solid rgb(29, 29, 27)
+            font-size: 24.306px
+            color: rgb(29, 29, 27)
+            line-height: 0.857
+            width: 100%
+            padding-right: 40px
+            font-family: 'HelveticaNeueCyr', sans-serif
+        button
+            position: absolute
+            right: 0
+            top: 25px
+            background-color: transparent
+            border: 0
+            padding: 3px
+            margin-right: -3px
+            img
+                transition: all 0.3s
+            &:hover
+                cursor: pointer
+                img
+                    transform: scale(1.1)
+@media(max-width: 991px)
+    .stock
+        &__img
+            width: 35%
+        &__cont
+            width: 65%
+    .ncart__wrap
+        flex-direction: column
+        grid-gap: 50px
+@media(max-width: 767px)
+    .cart
+        width: 100%
+        padding-left: 20px
+        padding-right: 20px
+    .stock
+        &__img
+            width: 100%
+            height: auto
+        &__cont
+            width: 100%
+        &__close
+            path
+                stroke: #fff
+@media(max-width: 575px)
+    .ncart
+        padding-top: 30px
+        padding-bottom: 60px
+        &__left
+            width: 100%
+        &__main
+            width: 100%
+        &__wrap
+            grid-gap: 35px
+    .stock
+        &__cont
+            padding: 45px 20px
+        &__title
+            font-size: 20px
+            line-height: 121.3%
+            margin-bottom: 24px
+        &__subtitle
+            font-size: 14px
+            line-height: 118%
+            margin-bottom: 34px
+        &__form
+            width: 100%
+    .overlay
+        &-add
+            .popup
+                padding: 45px 30px
+        &-start
+            .popup
+                padding: 40px 20px
+            &__btns
+                flex-direction: column
+                grid-gap: 8px
+                button
+                    width: 100%
+    .add
+        &__check
+            width: 100%
+            margin-bottom: 15px
+            line-height: 14px
+        &__more
+            width: 100%
+            line-height: 14px
+        &__bottom
+            display: block
+    .cart
+        padding: 25px 20px
+        &__form
+            padding: 25px
+        &__title
+            font-size: 16px
+            line-height: 121.3%
+        &__top
+            margin-bottom: 20px
+        &-main
+            &__cont
+                width: 140px
+            &__img
+                width: 165px
+                height: 110px
+                max-width: calc(100% - 170px)
+            &__name
+                font-size: 14px
+                line-height: 123%
+                margin-bottom: 13px
+                display: block
+            &__descr
+                font-size: 12px
+                line-height: 121.3%
+                margin-bottom: 17px
+            &__price
+                font-size: 20px
+                line-height: 148.8%
+                margin-bottom: 8px
+            &__bottom
+                display: block
+                position: static
+                span
+                    font-size: 14px
+                    line-height: 148.8%
+                    margin-bottom: 5px
+            &__count
+                input
+                    font-size: 20px
+        &__contact
+            grid-gap: 30px
+            input
+                width: 100%
+                padding-left: 3px
+                font-size: 14px
+        &__search
+            width: 100%
+            &-top
+                width: 100%
+            &-drop
+                width: 100%
+        &-end
+            &__price
+                width: auto
+        &__conn
+            display: block
+            label
+                width: 100%
+                padding-top: 0px
+                margin-bottom: 14px
+                &:nth-child(1)
+                    width: 100%
+        &-sum
+            &__title, &__price
+                font-size: 20px
+                line-height: 121.3%
+            .old
+                font-size: 14px
+                transform: translateY(-1px)
+        &__promo
+            display: block
+            span
+                bottom: 100px
+            input
+                width: 100%
+            button
+                height: 58px
+                font-size: 14px
+                width: 100%
+                margin-top: 40px
+    .search
+        padding: 25px 15px
+        &__form
+            input
+                padding: 15px 0
+                padding-right: 40px
+                font-size: 20px
+                line-height: 20px
+            button
+                top: 10px

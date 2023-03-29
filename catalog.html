@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spirit of insight</title>
+    <link rel="preload" href="fonts/HelveticaNeueCyr-Light.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/HelveticaNeueCyr-Medium.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/ALSRubl.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="icon" href="favicon.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__wrap">
+                <a href="/" class="header__logo">
+                    <img src="img/logo.svg" alt="">
+                </a>
+                <ul class="header__menu">
+                    <li>
+                        <a href="">КАТАЛОГ</a>
+                        <ul>
+                            <li><a href="">Для первых свиданий </a></li>
+                            <li><a href="">Для пар</a></li>
+                            <li><a href="">Для детей</a></li>
+                            <li><a href="">Для взрослых 18+</a></li>
+                            <li><a href="">Аксессуары</a></li>
+                            <li><a href="">Подарки</a></li>
+                            <li><a href="">Новинки</a></li>
+                            <li><a href="">Рекомендуем</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">ИГРЫ</a></li>
+                    <li><a href="">КАНЦЕЛЯРИЯ</a></li>
+                    <li><a href="">ДЛЯ БИЗНЕСА</a></li>
+                    <li><a href="">GIFT CARD</a></li>
+                </ul>
+                <div class="header__links">
+                    <a href="" class="modal-search">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M20.8 21.7382C19.15 20.1206 17.5 18.5029 15.8823 16.8853L15.7529 16.7559C15.6882 16.7882 15.6559 16.8206 15.5912 16.8529C14.5235 17.6941 13.2618 18.2441 11.9353 18.4706C9.99411 18.8264 7.95587 18.5029 6.24117 17.5C4.4294 16.497 3.07058 14.8147 2.42352 12.8412C2.2294 12.2264 2.09999 11.6117 2.03528 10.997C2.03528 10.9323 2.00293 10.9 2.00293 10.8353V9.73527C2.06764 9.41174 2.09999 9.05586 2.16469 8.73233C2.39117 7.53527 2.87646 6.40292 3.58822 5.46468C4.75293 3.84704 6.43528 2.71468 8.34411 2.26174C10.9647 1.54998 13.747 2.16468 15.8176 3.91174C17.5647 5.27057 18.6323 7.27645 18.8265 9.47645C19.0529 11.3853 18.5353 13.3264 17.4353 14.9117C17.2088 15.2353 16.95 15.5588 16.6588 15.9147C16.7235 15.947 16.7882 15.9794 16.8206 16.0117L21.7706 20.8647C22.0618 21.1559 22.1265 21.447 21.9323 21.7059C21.8029 21.8353 21.6735 21.9323 21.5441 22.0294C21.3244 22.1942 21.0272 21.9654 20.8 21.7382ZM3.26469 10.0264C3.23234 11.0617 3.42646 12.097 3.84705 13.0353C4.9794 15.4941 6.92058 16.9176 9.60587 17.2412C11.4176 17.5 13.2941 17.0147 14.7176 15.8823C16.8529 14.2323 17.8235 12.0323 17.4676 9.34704C17.2088 7.08233 15.85 5.1088 13.8118 4.10586C11.5794 2.84409 8.86175 2.9088 6.69411 4.29998C4.62352 5.46468 3.3294 7.66468 3.26469 10.0264Z"
+                                fill="black" stroke="black" stroke-width="0.5" stroke-miterlimit="10" />
+                        </svg>
+                        <div class="hover">
+                            <img src="img/search2.svg" alt="">
+                        </div>
+                    </a>
+                    <a href="">
+                        <svg width="25" height="23" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M0.757507 7.20457C0.833265 6.75003 0.909022 6.2576 1.02266 5.80306C1.78023 3.00003 4.39387 1.10609 7.27266 1.2576C9.1666 1.37124 10.9469 2.12882 12.3484 3.41669L12.4999 3.53033C12.6893 3.37882 12.8787 3.18942 13.106 3.03791C14.2802 2.09094 15.6817 1.52276 17.1969 1.29548C20.4924 0.840937 23.5984 3.07579 24.1666 6.33336C24.5454 8.37882 24.053 10.2349 23.0302 12.0152C22.1211 13.5303 20.9848 14.894 19.659 16.0682C17.6136 17.9621 15.3787 19.5909 12.9924 20.9925C12.6893 21.1818 12.3105 21.1818 12.0075 20.9925C9.24236 19.4015 6.70448 17.4318 4.43175 15.1591C3.10599 13.8334 2.04539 12.2803 1.28781 10.5758C1.02266 9.89397 0.833265 9.17427 0.757507 8.45457C0.795386 8.45457 0.757507 8.41669 0.757507 8.37882V7.20457ZM7.08326 2.73488C5.07569 2.65912 3.29539 3.90912 2.61357 5.76518C2.04539 7.28033 2.15902 8.98488 2.87872 10.4243C3.59842 11.9015 4.62114 13.2652 5.79539 14.4015C7.80296 16.3712 9.99993 18.0758 12.4242 19.5152C12.4999 19.5909 12.6514 19.5909 12.7272 19.5152C14.5454 18.4167 16.2499 17.1667 17.8787 15.8031C19.4317 14.5152 20.7575 13 21.8181 11.2955C22.6514 9.89397 23.1439 8.41669 22.803 6.75003C22.4621 4.93185 21.4772 3.60609 19.659 3.00003C18.2575 2.54548 16.7424 2.697 15.4166 3.37882C14.5833 3.79548 13.7878 4.36366 13.1439 5.0076C12.8787 5.34851 12.3863 5.38639 12.0833 5.12124C12.0454 5.08336 12.0075 5.04548 11.9696 5.0076C11.8181 4.85609 11.6666 4.70457 11.5151 4.59094C10.303 3.45457 8.71205 2.81063 7.08326 2.73488Z"
+                                fill="#D4B293" stroke="#D4B293" stroke-width="0.378788" stroke-miterlimit="10" />
+                        </svg>
+                        <div class="hover">
+                            <img src="img/wishlist2.svg" alt="">
+                        </div>
+                    </a>
+                    <a href="" class="modal-cart">
+                        <svg width="23" height="29" viewBox="0 0 23 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M6.89007 6.77026C6.67249 3.97795 8.84832 1.91092 11.2055 1.69334C12.6923 1.54828 13.9978 1.98345 15.0857 2.99883C16.1736 4.01421 16.645 5.28345 16.6088 6.77026C17.0439 6.77026 17.4428 6.77026 17.8417 6.77026C18.9659 6.77026 19.6912 7.49553 19.7637 8.58345C19.8725 10.5054 20.0538 12.4637 20.1626 14.3856C20.2714 16.0538 20.4164 17.7219 20.5252 19.39C20.5615 19.8615 20.5978 20.3329 20.5978 20.8406C20.5978 21.6021 20.0901 22.2911 19.3648 22.5087C19.1472 22.5812 18.8934 22.6175 18.6758 22.6175C14.034 22.6175 9.39227 22.6175 4.75051 22.6175C3.59007 22.6175 2.79227 21.8197 2.8648 20.623C2.93733 19.2087 3.04612 17.7944 3.15491 16.3802C3.2637 14.9296 3.37249 13.4428 3.48128 11.9922C3.55381 10.8318 3.62634 9.63509 3.73513 8.47465C3.80766 7.45927 4.5692 6.80652 5.58458 6.80652C6.05601 6.77026 6.45491 6.77026 6.89007 6.77026ZM6.9626 8.29334C6.49117 8.29334 6.01975 8.29334 5.58458 8.29334C5.40326 8.29334 5.33073 8.40213 5.29447 8.58345C5.22194 9.49004 5.14942 10.4329 5.11315 11.3395C5.00436 12.79 4.89557 14.2043 4.82304 15.6549C4.71425 17.323 4.5692 18.9911 4.4604 20.6593C4.42414 20.9856 4.53293 21.0582 4.82304 21.0582C9.4648 21.0582 14.0703 21.0582 18.7121 21.0582C19.0384 21.0582 19.111 20.9856 19.111 20.6593C19.0384 19.4626 18.9296 18.3021 18.8571 17.1054C18.7121 15.1834 18.567 13.2615 18.4582 11.3395C18.3857 10.4329 18.3132 9.5263 18.2769 8.58345C18.2769 8.43839 18.2044 8.29334 18.023 8.29334C17.5879 8.29334 17.1164 8.29334 16.6813 8.29334C16.6813 8.40213 16.6813 8.51092 16.6813 8.58345C16.6813 9.74389 16.6813 10.9406 16.6813 12.101C16.6813 12.4274 16.5 12.6812 16.2099 12.8263C15.9197 12.9351 15.6296 12.8988 15.4121 12.6812C15.1945 12.4999 15.1582 12.2823 15.1582 12.0285C15.1582 10.8681 15.1582 9.74389 15.1582 8.58345C15.1582 8.51092 15.1582 8.40213 15.1582 8.3296C12.9461 8.3296 10.734 8.3296 8.52194 8.3296C8.52194 8.43839 8.52194 8.54718 8.52194 8.61971C8.52194 9.74389 8.52194 10.9043 8.52194 12.0285C8.52194 12.5725 8.19557 12.8988 7.7604 12.8988C7.28898 12.8988 6.99887 12.5362 6.99887 12.0285C6.99887 11.3032 7.03513 10.6142 7.03513 9.88894C6.9626 9.38125 6.9626 8.83729 6.9626 8.29334ZM15.0494 6.77026C15.2307 5.64608 14.5417 4.34059 13.4538 3.68784C12.3296 2.96257 10.8428 3.03509 9.75491 3.8329C8.77579 4.55817 8.30436 5.86367 8.44942 6.734C10.6615 6.77026 12.8373 6.77026 15.0494 6.77026Z"
+                                fill="#9FC64F" stroke="#9FC64F" stroke-width="0.3" stroke-miterlimit="10" />
+                        </svg>
+                        <div class="hover">
+                            <img src="img/cart2.svg" alt="">
+                        </div>
+                    </a>
+                </div>
+                <a href="" class="header__burg"><span></span></a>
+            </div>
+        </div>
+    </header>
+    <div class="overlay-search">
+        <div class="search animate__animated animate__fadeInDown">
+            <div class="search__close">
+                <img src="img/close.png" alt="">
+            </div>
+            <form action="" class="search__form">
+                <input type="text" placeholder="ЧТО БУДЕМ ИСКАТЬ?" required>
+                <button>
+                    <img src="img/search.svg" alt="">
+                </button>
+            </form>
+        </div>
+    </div>
+    <div class="overlay-cart ">
+        <div class="cart animate__animated animate__fadeInRight">
+            <div class="cart__top">
+                <div class="cart__title">КОРЗИНА</div>
+                <div class="cart__close">
+                    <img src="img/close.svg" alt="">
+                </div>
+            </div>
+            <div class="cart-main">
+                <div class="cart-main__block">
+                    <a href="" class="cart-main__img">
+                        <img src="img/cart1.jpg" alt="">
+                    </a>
+                    <div class="cart-main__cont">
+                        <a href="" class="cart-main__name">100 вопросов
+                            для свиданий</a>
+                        <div class="cart-main__descr">Купить премиум-игру в подарочной упаковке</div>
+                        <div class="cart-main__price">6400 <span>b</span></div>
+                        <div class="cart-main__bottom">
+                            <span>КОЛИЧЕСТВО</span>
+                            <div class="cart-main__count">
+                                <button class="minus"><img src="img/minus.svg" alt=""></button>
+                                <input type="number" value="1">
+                                <button class="plus"><img src="img/plus.svg" alt=""></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cart-main__del"><img src="img/close.svg" alt=""></div>
+                </div>
+                <div class="cart-main__block">
+                    <a href="" class="cart-main__img">
+                        <img src="img/cart2.jpg" alt="">
+                    </a>
+                    <div class="cart-main__cont">
+                        <a href="" class="cart-main__name">100 вопросов
+                            для ЗНАКОМСТВА
+                            С СОБОЙ И ПАРТНЕРОМ</a>
+                        <div class="cart-main__descr">Купить премиум-игру в подарочной упаковке</div>
+                        <div class="cart-main__price">3000 <span>b</span></div>
+                        <div class="cart-main__bottom">
+                            <span>КОЛИЧЕСТВО</span>
+                            <div class="cart-main__count">
+                                <button class="minus"><img src="img/minus.svg" alt=""></button>
+                                <input type="number" value="1">
+                                <button class="plus"><img src="img/plus.svg" alt=""></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cart-main__del"><img src="img/close.svg" alt=""></div>
+                </div>
+            </div>
+            <div class="cart-sum">
+                <div class="cart-sum__title">СУММА:</div>
+                <div class="cart-sum__price">
+                    <div class="old">12400 <span>b</span></div> 9920 <span>b</span>
+                </div>
+            </div>
+            <form action="" class="cart__promo">
+                <input type="text" placeholder="Введите промокод" required>
+                <span>Скидка 20% активирована!</span>
+                <button>АКТИВИРОВАТЬ</button>
+            </form>
+            <form class="cart__form">
+                <div class="cart__block">
+                    <div class="cart__title">КОНТАКТНАЯ ИНФОРМАЦИЯ:</div>
+                    <div class="cart__contact">
+                        <input type="text" placeholder="Как к Вам обращаться*" required>
+                        <input type="tel" placeholder="Ваш контактный номер*" required>
+                        <input type="email" placeholder="E-mail">
+                        <input type="text" placeholder="Кому доставить заказ">
+                    </div>
+                </div>
+                <div class="cart__block">
+                    <div class="cart__title">УДОБНЫЙ СПОСОБ ДЛЯ СВЯЗИ</div>
+                    <div class="cart__search">
+                        <input type="hidden" name="" value="Позвонить">
+                        <div class="cart__search-top">Позвонить</div>
+                        <div class="cart__search-drop">
+                            <a href="">Whatsapp</a>
+                            <a href="">Telegram</a>
+                            <a href="">Не тревожить</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart__block">
+                    <div class="cart__title">ДОСТАВКА:</div>
+                    <div class="cart__contact">
+                        <input type="text" placeholder="Город" required>
+                        <input type="text" placeholder="Улица" required>
+                        <input type="text" placeholder="Дом" required>
+                        <input type="text" placeholder="Квартира / офис" required>
+                    </div>
+                    <label class="cart__check">
+                        <input type="checkbox" name="" id="" checked required>
+                        <span></span>
+                        <p><span>Доставка по России</span>от 10 дней 600 <b>b</b></p>
+                    </label>
+                </div>
+                <label class="cart__check">
+                    <input type="checkbox" name="" id="" checked required>
+                    <span></span>
+                    <p>Согласен с правилами обработки персональных данных</p>
+                </label>
+                <div class="cart-end">
+                    <div class="cart-end__title">СУММА:</div>
+                    <div class="cart-end__price">12400 <span>b</span></div>
+                </div>
+                <button class="cart-end__btn">ОФОРМИТЬ ЗАКАЗ</button>
+            </form>
+        </div>
+    </div>
+    <div class="mob-menu">
+        <div class="header__links">
+            <a href="" class="modal-search">
+                <img src="img/search.svg" alt="">
+            </a>
+            <a href="">
+                <img src="img/wishlist.svg" alt="">
+            </a>
+            <a href="" class="modal-cart">
+                <img src="img/cart.svg" alt="">
+            </a>
+        </div>
+        <div class="header__close">
+            <img src="img/close.svg" alt="">
+        </div>
+        <ul class="mob-menu__wrap">
+            <li>
+                <a href="" class="with-sub">КАТАЛОГ</a>
+                <ul>
+                    <li><a href="">Для первых свиданий</a></li>
+                    <li><a href="">Для пар</a></li>
+                    <li><a href="">Для детей</a></li>
+                    <li><a href="">Для взрослых 18+</a></li>
+                    <li><a href="">Аксессуары</a></li>
+                    <li><a href="">Подарки</a></li>
+                    <li><a href="">Новинки</a></li>
+                    <li><a href="">Рекомендуем</a></li>
+                </ul>
+            </li>
+            <li><a href="">ИГРЫ</a></li>
+            <li><a href="">КАНЦЕЛЯРИЯ</a></li>
+            <li><a href="">ДЛЯ БИЗНЕСА</a></li>
+            <li><a href="">GIFT CARD</a></li>
+            <li><a href="">О КОМПАНИИ</a></li>
+            <li><a href="">КОМАНДА</a></li>
+            <li><a href="">ДОСТАВКА И ОПЛАТА</a></li>
+            <li><a href="">ОПТОВЫМ КЛИЕНТАМ</a></li>
+            <li><a href="">FAQ</a></li>
+            <li><a href="">КОНТАКТЫ</a></li>
+        </ul>
+    </div>
+    <div class="catalog">
+        <div class="container">
+            <!-- При выборе пункта значение скрытого инпута переписывается -->
+            <div class="catalog-top">
+                <div class="catalog-top__block">
+                    <div class="catalog-top__select">
+                        <input type="hidden" name="show" value="0">
+                        <div class="catalog-top__name">Фильтр</div>
+                        <div class="catalog-top__drop">
+                            <div class="catalog-f">
+                                <button class="catalog-f__all">выбрать все</button>
+                                <label>
+                                    <input type="checkbox" name="" id="">
+                                    <span></span>
+                                    <p>18+</p>
+                                </label>
+                                <label>
+                                    <input type="checkbox" name="" id="">
+                                    <span></span>
+                                    <p>отношения</p>
+                                </label>
+                                <label>
+                                    <input type="checkbox" name="" id="">
+                                    <span></span>
+                                    <p>предназначение</p>
+                                </label>
+                                <label>
+                                    <input type="checkbox" name="" id="">
+                                    <span></span>
+                                    <p>дети</p>
+                                </label>
+                                <label>
+                                    <input type="checkbox" name="" id="">
+                                    <span></span>
+                                    <p>канцелярия</p>
+                                </label>
+                                <label>
+                                    <input type="checkbox" name="" id="">
+                                    <span></span>
+                                    <p>мотивация</p>
+                                </label>
+                                <label>
+                                    <input type="checkbox" name="" id="">
+                                    <span></span>
+                                    <p>друзьям</p>
+                                </label>
+                                <label>
+                                    <input type="checkbox" name="" id="">
+                                    <span></span>
+                                    <p>коллегам</p>
+                                </label>
+                                <button class="catalog-f__show">ПОКАЗАТЬ</button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="catalog-top__block">
+                    <div class="catalog-top__select">
+                        <input type="hidden" name="sort" value="0">
+                        <div class="catalog-top__name">Сначала новые</div>
+                        <div class="catalog-top__drop">
+                            <a href="" data-sort="0">Сначала новые </a>
+                            <a href="" data-sort="1">Сначала популярные
+                            </a>
+                            <a href="" data-sort="2">По возрастанию цены</a>
+                            <a href="" data-sort="3">По убыванию цены</a>
+                            <a href="" data-sort="4">Выбор Spirit of Insight</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="home-cat__wrap">
+                <div class="home-cat__block">
+                    <a href="" class="home-cat__img">
+                        <img src="img/cat1.jpg" alt="">
+                    </a>
+                    <div class="home-cat__prem">premium</div>
+                    <a href="" class="home-cat__name">откровенная игра для двоих</a>
+                    <p class="home-cat__descr">Дескриптор, раскрывающий игру. <br>
+                        В одну-две строки.</p>
+                    <div class="home-cat__bot">
+                        <div class="home-cat__price">3000 </div>
+                        <button class="home-cat__btn active">
+                            <svg width="18" height="23" viewBox="0 0 18 23" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M9.16706 7.2002H3.14325C2.47659 7.2002 1.92897 7.75582 1.89325 8.46297L1.42897 18.5399C1.35754 20.1942 2.59563 21.5706 4.14325 21.5706H9.21468"
+                                    fill="#1D1D1B" class="fill" />
+                                <path
+                                    d="M9.16706 7.2002H3.14325C2.47659 7.2002 1.92897 7.75582 1.89325 8.46297L1.42897 18.5399C1.35754 20.1942 2.59563 21.5706 4.14325 21.5706H9.21468"
+                                    stroke="#1D1D1B" class="strk" stroke-width="1" stroke-miterlimit="10" />
+                                <path
+                                    d="M9.16675 7.2002H15.2025C15.8691 7.2002 16.4167 7.75582 16.4525 8.46297L16.9167 18.5399C16.9882 20.1942 15.7501 21.5706 14.2025 21.5706H9.21437"
+                                    fill="#1D1D1B" class="fill" />
+                                <path
+                                    d="M9.16675 7.2002H15.2025C15.8691 7.2002 16.4167 7.75582 16.4525 8.46297L16.9167 18.5399C16.9882 20.1942 15.7501 21.5706 14.2025 21.5706H9.21437"
+                                    stroke="#1D1D1B" class="strk" stroke-width="1" stroke-miterlimit="10" />
+                                <path
+                                    d="M4.88049 8.6271V5.98789C4.88049 3.47497 6.79716 1.44189 9.16621 1.44189C11.5353 1.44189 13.4519 3.47497 13.4519 5.98789V8.6271"
+                                    stroke="#1D1D1B" class="strk" stroke-width="1" stroke-miterlimit="10"
+                                    stroke-linecap="round" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="home-cat__block">
+                    <a href="" class="home-cat__img">
+                        <img src="img/cat2.jpg" alt="">
+                    </a>
+                    <div class="home-cat__prem">premium</div>
+                    <a href="" class="home-cat__name">откровенная игра для двоих</a>
+                    <p class="home-cat__descr">Дескриптор, раскрывающий игру. <br>
+                        В одну-две строки.</p>
+                    <div class="home-cat__bot">
+                        <div class="home-cat__price">3000 </div>
+                        <button class="home-cat__btn">
+                            <svg width="18" height="23" viewBox="0 0 18 23" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M9.16706 7.2002H3.14325C2.47659 7.2002 1.92897 7.75582 1.89325 8.46297L1.42897 18.5399C1.35754 20.1942 2.59563 21.5706 4.14325 21.5706H9.21468"
+                                    fill="#1D1D1B" class="fill" />
+                                <path
+                                    d="M9.16706 7.2002H3.14325C2.47659 7.2002 1.92897 7.75582 1.89325 8.46297L1.42897 18.5399C1.35754 20.1942 2.59563 21.5706 4.14325 21.5706H9.21468"
+                                    stroke="#1D1D1B" class="strk" stroke-width="1" stroke-miterlimit="10" />
+                                <path
+                                    d="M9.16675 7.2002H15.2025C15.8691 7.2002 16.4167 7.75582 16.4525 8.46297L16.9167 18.5399C16.9882 20.1942 15.7501 21.5706 14.2025 21.5706H9.21437"
+                                    fill="#1D1D1B" class="fill" />
+                                <path
+                                    d="M9.16675 7.2002H15.2025C15.8691 7.2002 16.4167 7.75582 16.4525 8.46297L16.9167 18.5399C16.9882 20.1942 15.7501 21.5706 14.2025 21.5706H9.21437"
+                                    stroke="#1D1D1B" class="strk" stroke-width="1" stroke-miterlimit="10" />
+                                <path
+                                    d="M4.88049 8.6271V5.98789C4.88049 3.47497 6.79716 1.44189 9.16621 1.44189C11.5353 1.44189 13.4519 3.47497 13.4519 5.98789V8.6271"
+                                    stroke="#1D1D1B" class="strk" stroke-width="1" stroke-miterlimit="10"
+                                    stroke-linecap="round" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="home-cat__block">
+                    <a href="" class="home-cat__img">
+                        <img src="img/cat3.jpg" alt="">
+                    </a>
+                    <div class="home-cat__prem">premium</div>
+                    <a href="" class="home-cat__name">откровенная игра для двоих</a>
+                    <p class="home-cat__descr">Дескриптор, раскрывающий игру. <br>
+                        В одну-две строки.</p>
+                    <div class="home-cat__bot">
+                        <div class="home-cat__price">3000 </div>
+                        <button class="home-cat__btn">
+                            <svg width="18" height="23" viewBox="0 0 18 23" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M9.16706 7.2002H3.14325C2.47659 7.2002 1.92897 7.75582 1.89325 8.46297L1.42897 18.5399C1.35754 20.1942 2.59563 21.5706 4.14325 21.5706H9.21468"
+                                    fill="#1D1D1B" class="fill" />
+                                <path
+                                    d="M9.16706 7.2002H3.14325C2.47659 7.2002 1.92897 7.75582 1.89325 8.46297L1.42897 18.5399C1.35754 20.1942 2.59563 21.5706 4.14325 21.5706H9.21468"
+                                    stroke="#1D1D1B" class="strk" stroke-width="1" stroke-miterlimit="10" />
+                                <path
+                                    d="M9.16675 7.2002H15.2025C15.8691 7.2002 16.4167 7.75582 16.4525 8.46297L16.9167 18.5399C16.9882 20.1942 15.7501 21.5706 14.2025 21.5706H9.21437"
+                                    fill="#1D1D1B" class="fill" />
+                                <path
+                                    d="M9.16675 7.2002H15.2025C15.8691 7.2002 16.4167 7.75582 16.4525 8.46297L16.9167 18.5399C16.9882 20.1942 15.7501 21.5706 14.2025 21.5706H9.21437"
+                                    stroke="#1D1D1B" class="strk" stroke-width="1" stroke-miterlimit="10" />
+                                <path
+                                    d="M4.88049 8.6271V5.98789C4.88049 3.47497 6.79716 1.44189 9.16621 1.44189C11.5353 1.44189 13.4519 3.47497 13.4519 5.98789V8.6271"
+                                    stroke="#1D1D1B" class="strk" stroke-width="1" stroke-miterlimit="10"
+                                    stroke-linecap="round" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="home-cat__block">
+                    <a href="" class="home-cat__img">
+                        <img src="img/cat4.jpg" alt="">
+                    </a>
+                    <div class="home-cat__prem">premium</div>
+                    <a href="" class="home-cat__name">откровенная игра для двоих</a>
+                    <p class="home-cat__descr">Дескриптор, раскрывающий игру. <br>
+                        В одну-две строки.</p>
+                    <div class="home-cat__bot">
+                        <div class="home-cat__price">3000 </div>
+                        <button class="home-cat__btn">
+                            <svg width="18" height="23" viewBox="0 0 18 23" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M9.16706 7.2002H3.14325C2.47659 7.2002 1.92897 7.75582 1.89325 8.46297L1.42897 18.5399C1.35754 20.1942 2.59563 21.5706 4.14325 21.5706H9.21468"
+                                    fill="#1D1D1B" class="fill" />
+                                <path
+                                    d="M9.16706 7.2002H3.14325C2.47659 7.2002 1.92897 7.75582 1.89325 8.46297L1.42897 18.5399C1.35754 20.1942 2.59563 21.5706 4.14325 21.5706H9.21468"
+                                    stroke="#1D1D1B" class="strk" stroke-width="1" stroke-miterlimit="10" />
+                                <path
+                                    d="M9.16675 7.2002H15.2025C15.8691 7.2002 16.4167 7.75582 16.4525 8.46297L16.9167 18.5399C16.9882 20.1942 15.7501 21.5706 14.2025 21.5706H9.21437"
+                                    fill="#1D1D1B" class="fill" />
+                                <path
+                                    d="M9.16675 7.2002H15.2025C15.8691 7.2002 16.4167 7.75582 16.4525 8.46297L16.9167 18.5399C16.9882 20.1942 15.7501 21.5706 14.2025 21.5706H9.21437"
+                                    stroke="#1D1D1B" class="strk" stroke-width="1" stroke-miterlimit="10" />
+                                <path
+                                    d="M4.88049 8.6271V5.98789C4.88049 3.47497 6.79716 1.44189 9.16621 1.44189C11.5353 1.44189 13.4519 3.47497 13.4519 5.98789V8.6271"
+                                    stroke="#1D1D1B" class="strk" stroke-width="1" stroke-miterlimit="10"
+                                    stroke-linecap="round" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="home-cat__block">
+                    <a href="" class="home-cat__img">
+                        <img src="img/cat5.jpg" alt="">
+                    </a>
+                    <div class="home-cat__prem">premium</div>
+                    <a href="" class="home-cat__name">откровенная игра для двоих</a>
+                    <p class="home-cat__descr">Дескриптор, раскрывающий игру. <br>
+                        В одну-две строки.</p>
+                    <div class="home-cat__bot">
+                        <div class="home-cat__price">3000 </div>
+                        <button class="home-cat__btn">
+                            <svg width="18" height="23" viewBox="0 0 18 23" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M9.16706 7.2002H3.14325C2.47659 7.2002 1.92897 7.75582 1.89325 8.46297L1.42897 18.5399C1.35754 20.1942 2.59563 21.5706 4.14325 21.5706H9.21468"
+                                    fill="#1D1D1B" class="fill" />
+                                <path
+                                    d="M9.16706 7.2002H3.14325C2.47659 7.2002 1.92897 7.75582 1.89325 8.46297L1.42897 18.5399C1.35754 20.1942 2.59563 21.5706 4.14325 21.5706H9.21468"
+                                    stroke="#1D1D1B" class="strk" stroke-width="1" stroke-miterlimit="10" />
+                                <path
+                                    d="M9.16675 7.2002H15.2025C15.8691 7.2002 16.4167 7.75582 16.4525 8.46297L16.9167 18.5399C16.9882 20.1942 15.7501 21.5706 14.2025 21.5706H9.21437"
+                                    fill="#1D1D1B" class="fill" />
+                                <path
+                                    d="M9.16675 7.2002H15.2025C15.8691 7.2002 16.4167 7.75582 16.4525 8.46297L16.9167 18.5399C16.9882 20.1942 15.7501 21.5706 14.2025 21.5706H9.21437"
+                                    stroke="#1D1D1B" class="strk" stroke-width="1" stroke-miterlimit="10" />
+                                <path
+                                    d="M4.88049 8.6271V5.98789C4.88049 3.47497 6.79716 1.44189 9.16621 1.44189C11.5353 1.44189 13.4519 3.47497 13.4519 5.98789V8.6271"
+                                    stroke="#1D1D1B" class="strk" stroke-width="1" stroke-miterlimit="10"
+                                    stroke-linecap="round" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="home-cat__block">
+                    <a href="" class="home-cat__img">
+                        <img src="img/cat6.jpg" alt="">
+                    </a>
+                    <div class="home-cat__prem">premium</div>
+                    <a href="" class="home-cat__name">откровенная игра для двоих</a>
+                    <p class="home-cat__descr">Дескриптор, раскрывающий игру. <br>
+                        В одну-две строки.</p>
+                    <div class="home-cat__bot">
+                        <div class="home-cat__price">3000 </div>
+                        <button class="home-cat__btn">
+                            <svg width="18" height="23" viewBox="0 0 18 23" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M9.16706 7.2002H3.14325C2.47659 7.2002 1.92897 7.75582 1.89325 8.46297L1.42897 18.5399C1.35754 20.1942 2.59563 21.5706 4.14325 21.5706H9.21468"
+                                    fill="#1D1D1B" class="fill" />
+                                <path
+                                    d="M9.16706 7.2002H3.14325C2.47659 7.2002 1.92897 7.75582 1.89325 8.46297L1.42897 18.5399C1.35754 20.1942 2.59563 21.5706 4.14325 21.5706H9.21468"
+                                    stroke="#1D1D1B" class="strk" stroke-width="1" stroke-miterlimit="10" />
+                                <path
+                                    d="M9.16675 7.2002H15.2025C15.8691 7.2002 16.4167 7.75582 16.4525 8.46297L16.9167 18.5399C16.9882 20.1942 15.7501 21.5706 14.2025 21.5706H9.21437"
+                                    fill="#1D1D1B" class="fill" />
+                                <path
+                                    d="M9.16675 7.2002H15.2025C15.8691 7.2002 16.4167 7.75582 16.4525 8.46297L16.9167 18.5399C16.9882 20.1942 15.7501 21.5706 14.2025 21.5706H9.21437"
+                                    stroke="#1D1D1B" class="strk" stroke-width="1" stroke-miterlimit="10" />
+                                <path
+                                    d="M4.88049 8.6271V5.98789C4.88049 3.47497 6.79716 1.44189 9.16621 1.44189C11.5353 1.44189 13.4519 3.47497 13.4519 5.98789V8.6271"
+                                    stroke="#1D1D1B" class="strk" stroke-width="1" stroke-miterlimit="10"
+                                    stroke-linecap="round" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="home-cat__end">
+                <a href="/catalog.html" class="home-cat__more">показать ещё</a>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <ul class="footer__menu">
+                <li><a href="">О КОМПАНИИ</a></li>
+                <li><a href="">КОМАНДА</a></li>
+                <li><a href="">КАТАЛОГ</a></li>
+                <li><a href="">ДОСТАВКА И ОПЛАТА</a></li>
+                <li><a href="">ОПТОВЫМ КЛИЕНТАМ</a></li>
+                <li><a href="">FAQ</a></li>
+                <li><a href="">КОНТАКТЫ</a></li>
+            </ul>
+            <div class="footer__wrap">
+                <div class="footer__copy">© 2020-2022 <br>
+                    ООО «ИНСАЙТ» ИНН: 9717094104</div>
+                <div class="footer__adres">
+                    Москва, <br>
+                    пр-т Мира, дом 102, стр.34, эт.1. кмн. 13
+                </div>
+                <div class="footer__soc-all">
+                    <div class="footer__soc">
+                        <a href="">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 62.28 62.27">
+                                <g data-name="Layer 2">
+                                    <g data-name="Layer 1">
+                                        <path
+                                            d="M29.19,0h3.89c1.06.14,2.13.24,3.19.42A30.57,30.57,0,0,1,55.89,12.31,30.18,30.18,0,0,1,61.7,37,29.9,29.9,0,0,1,51.11,55a30.31,30.31,0,0,1-24.18,7,30,30,0,0,1-16.31-7.47A30.59,30.59,0,0,1,.49,36.56C.28,35.41.16,34.24,0,33.08V29.19c.14-1,.24-2.09.41-3.12A30.67,30.67,0,0,1,9,9.31,30.52,30.52,0,0,1,25.77.48C26.91.28,28.05.16,29.19,0Zm1.95,58.38A27.25,27.25,0,1,0,3.89,31.1,27.29,27.29,0,0,0,31.14,58.38Z" />
+                                        <path
+                                            d="M24.23,35.12c-1,.43-2,.79-3,1.3A2.87,2.87,0,0,1,18,36.17c-2.18-1.5-4.45-2.88-6.69-4.29a2,2,0,0,1,.36-3.7q16.21-6.33,32.43-12.7a2.05,2.05,0,0,1,2.23.18A2,2,0,0,1,47,17.79C45.75,24.4,44.56,31,43.36,37.62c-.46,2.53-.93,5.06-1.39,7.59a2,2,0,0,1-3,1.52q-4.11-2-8.2-4.1a.62.62,0,0,0-.88.13c-1.15,1.19-2.35,2.35-3.51,3.53a2,2,0,0,1-3.51-1.46c0-2.25,0-4.5,0-6.74a2.71,2.71,0,0,1,1-2.41l.52-.38ZM42.56,20.27,16.38,30.51c1.2.77,2.28,1.47,3.37,2.13.13.08.39,0,.56-.07,1-.4,1.9-.82,2.84-1.23q4.52-1.95,9-3.92a2,2,0,0,1,2.3.28,1.89,1.89,0,0,1,0,2.89C32,33,29.56,35.47,27.13,37.91c-.15.15-.35.34-.36.52-.05.6,0,1.19,0,1.78.09,0,.12,0,.13,0l1.56-1.52a1.91,1.91,0,0,1,2.34-.39c.46.21.91.45,1.36.68l6.43,3.2Z" />
+                                    </g>
+                                </g>
+                            </svg>
+                        </a>
+                        <a href="">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 61.26 63.45">
+                                <g data-name="Layer 2">
+                                    <g data-name="Layer 1">
+                                        <path
+                                            d="M6.07,63.45C4.52,62.68,4.2,62,4.51,60.28q.93-5.2,1.81-10.42a1.22,1.22,0,0,0-.2-.83A29.7,29.7,0,0,1,.29,34.88,29.86,29.86,0,0,1,7.48,10.67,29.68,29.68,0,0,1,24.12.7,30.62,30.62,0,0,1,38.36,60.25,29.87,29.87,0,0,1,19.13,59a1.48,1.48,0,0,0-1.22,0Q12.5,61.23,7.06,63.45ZM9.41,57.7c.27-.09.46-.14.64-.22,2.37-1,4.75-1.91,7.09-2.92a3.32,3.32,0,0,1,2.9,0A25.63,25.63,0,0,0,36,56.34a26.25,26.25,0,0,0-5.24-52,25.22,25.22,0,0,0-18.41,7.54c-6.47,6.4-8.94,14.2-7.55,23.18A24.65,24.65,0,0,0,10.11,47a2.78,2.78,0,0,1,.77,2.38c-.19,1-.37,2-.54,3C10,54.15,9.73,55.89,9.41,57.7Z" />
+                                        <path
+                                            d="M36,43A17.53,17.53,0,0,1,25.87,38.8a19.92,19.92,0,0,1-7.2-11,11.85,11.85,0,0,1,1.26-9.54,6,6,0,0,1,.43-.6,1,1,0,0,1,1.57-.11q2.16,2.12,4.29,4.29a1,1,0,0,1-.07,1.58c-.82.84-1.67,1.65-2.48,2.51a.75.75,0,0,0-.14.67A20.84,20.84,0,0,0,34.48,37.71a.69.69,0,0,0,.94-.18c.77-.82,1.57-1.59,2.36-2.38a1.06,1.06,0,0,1,1.76,0l4,4A1.07,1.07,0,0,1,43.44,41C41.75,42.31,39.41,43,36,43Z" />
+                                    </g>
+                                </g>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="footer__soc">
+                        <a href="">
+                            <svg width="15" height="15" viewBox="0 0 34 19" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="m31.5584982 1.28655527c.2223912-.7416123.0000002-1.28655527-1.0584372-1.28655527h-3.5c-.8899347 0-1.3002074.47075088-1.5227219.98984863 0 0-1.7798696 4.33838569-4.3012897 7.15645072-.8157426.81574267-1.1865797 1.07529155-1.631547 1.07529155-.2224529 0-.5561938-.25954888-.5561938-1.00109946v-6.93393617c0-.88993476-.2465735-1.28655527-.9882476-1.28655527h-5.5c-.556132 0-.8905943.41303906-.8905943.80449184 0 .84364187 1.2606484 1.03819551 1.3905943 3.41135488v5.15412836c0 1.13002492-.2040763 1.33490212-.6490437 1.33490212-1.1865179 0-4.07272614-4.35776695-5.78451424-9.34419156-.33546923-.96918821-.67193969-1.36068564-1.56644202-1.36068564h-3.5c-1 0-1.20001221.47075088-1.20001221.98984863 0 .92703081 1.18657969 5.52496537 5.52490365 11.60606287 2.8921954 4.1529054 6.96710872 6.4040885 10.67510852 6.4040885 2.2247752 0 2.5-.5 2.5-1.3612483v-3.1387517c0-1 .2107621-1.1995723.9152784-1.1995723.5190977 0 1.4090325.2595489 3.4855469 2.2618712 2.3730977 2.3730977 2.7643343 3.4377011 4.0991747 3.4377011h3.5c1 0 1.5-.5 1.2115578-1.486722-.3156423-.9834253-1.4486683-2.4102444-2.9520878-4.1016239-.8158044-.9640651-2.0394184-2.0022606-2.4102555-2.5214818-.5190977-.6673585-.3707752-.96406514 0-1.55729326 0 0 4.2642554-6.00696708 4.7092227-8.04632377z"
+                                    fill="#000" fill-rule="evenodd" />
+                            </svg>
+                        </a>
+                        <a href="">
+                            <svg enable-background="new 0 0 24 24" width="15" height="15" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="m23.469 5.929.03.196c-.29-1.029-1.073-1.823-2.068-2.112l-.021-.005c-1.871-.508-9.4-.508-9.4-.508s-7.51-.01-9.4.508c-1.014.294-1.798 1.088-2.083 2.096l-.005.021c-.699 3.651-.704 8.038.031 11.947l-.031-.198c.29 1.029 1.073 1.823 2.068 2.112l.021.005c1.869.509 9.4.509 9.4.509s7.509 0 9.4-.509c1.015-.294 1.799-1.088 2.084-2.096l.005-.021c.318-1.698.5-3.652.5-5.648 0-.073 0-.147-.001-.221.001-.068.001-.149.001-.23 0-1.997-.182-3.951-.531-5.846zm-13.861 9.722v-7.293l6.266 3.652z"
+                                    fill="#000" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer__links">
+                    <a href="">Договор оферты </a>
+                    <a href="">Политика возврата</a>
+                    <a href="">Политика конфиденциальности</a>
+                </div>
+            </div>
+            <p class="footer__bottom">Любое использование либо копирование материалов или подборки материалов сайта,
+                элементов дизайна и оформления <br>
+                допускается лишь с разрешения правообладателя и только со ссылкой на источник: spiritofinsight.com.
+            </p>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.1.slim.min.js"
+        integrity="sha256-w8CvhFs7iHNVUtnSP0YKEg00p9Ih13rlL9zGqvLdePA=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js">
+    </script>
+    <script>
+        new WOW({
+            mobile: false,
+        }).init();
+    </script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

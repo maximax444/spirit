@@ -1,0 +1,286 @@
+.card
+    padding-top: 39px
+    padding-bottom: 35px
+    &__count
+        border: 1px solid #DFDFDF
+        input
+            border-left: 1px solid #DFDFDF
+            border-right: 1px solid #DFDFDF
+            width: 55px
+        button
+            width: 38px
+            justify-content: center
+    &__left
+        display: flex
+        align-items: flex-start
+        grid-gap: 11px
+        position: relative
+        position: sticky
+        top: 0
+        padding-top: 40px
+        margin-top: -40px
+    &__next
+        position: absolute
+        bottom: -56px
+        right: 30px
+        cursor: pointer
+    &__img
+        width: 550px
+        height: 480px
+        position: relative
+        img
+            width: 100%
+            height: 100%
+            object-fit: cover
+    &__slider
+        height: 480px
+    &__slide
+        width: 80px
+        height: 64px
+        padding: 2px
+        cursor: pointer
+        transition: all 0.3s
+        border: 1px solid transparent
+        img
+            width: 100%
+            height: 100%
+            object-fit: cover
+        &:hover
+            border: 1px solid #000000
+        &:focus
+            outline: none
+        &.swiper-slide-active
+            border: 1px solid #000000
+    &__wrap
+        display: flex
+        justify-content: space-between
+        align-items: flex-start
+    &__cont
+        width: 515px
+        position: relative
+    &__wish
+        position: absolute
+        top: 0
+        right: 0
+        padding-top: 1px
+        .hover
+            padding-top: 0
+    &__title
+        margin: 0
+        font-weight: 550
+        font-size: 20px
+        line-height: 121.3%
+        letter-spacing: 0.025em
+        color: #282828
+        margin-bottom: 14px
+        padding-right: 35px
+        span
+            font-weight: 300
+            font-size: 11.6667px
+            line-height: 148.8%
+            letter-spacing: -0.005em
+            color: #282828
+            position: relative
+            top: -6px
+    &__descr
+        margin-bottom: 30px
+        p
+            margin: 0
+            font-weight: 300
+            font-size: 16px
+            line-height: 148.8%
+            color: #282828
+            margin-bottom: 17px
+    &-options
+        display: flex
+        align-items: center
+        grid-gap: 5px
+        margin-bottom: 42px
+        &__block
+            position: relative
+            cursor: pointer
+            &:hover
+                span
+                    border: 1px solid #000000
+            span
+                padding: 11px 23px
+                font-weight: 300
+                font-size: 14px
+                line-height: 121.3%
+                letter-spacing: 0.075em
+                color: #282828
+                border: 1px solid transparent
+                display: block
+                transition: all 0.3s
+            input
+                width: 0
+                height: 0
+                overflow: hidden
+                opacity: 0
+                margin: 0
+                position: absolute
+                top: 0
+                left: 0
+                &:checked + span
+                    border: 1px solid #000000
+    &__price
+        margin-bottom: 20px
+        font-weight: 400
+        font-size: 30px
+        line-height: 121.3%
+        letter-spacing: -0.008em
+        color: #282828
+        span
+            font-family: 'ALS Rubl'
+    &__main
+        display: flex
+        align-items: center
+        grid-gap: 13px
+        margin-bottom: 50px
+    &__btn
+        background: #1D1D1B
+        width: 220px
+        height: 50px
+        border: 0
+        font-weight: 300
+        font-size: 18px
+        line-height: 21px
+        letter-spacing: 0.075em
+        color: #FFFFFF
+        cursor: pointer
+        transition: all 0.3s
+        &:hover
+            background: #868686
+            color: #FFFFFF
+    &__bot
+        font-weight: 300
+        font-size: 14px
+        line-height: 148.8%
+        color: #282828
+        padding-top: 45px
+    &-qa
+        border-top: 1px solid #1D1D1B
+        border-bottom: 1px solid #1D1D1B
+        padding: 6px 0
+        &__title
+            position: relative
+            padding: 7px 0
+            padding-left: 20px
+            font-weight: 300
+            font-size: 14px
+            line-height: 121.3%
+            letter-spacing: -0.02em
+            color: #282828
+            cursor: pointer
+            &::before
+                content: ""
+                display: block
+                width: 12px
+                height: 12px
+                position: absolute
+                left: 0
+                top: 9px
+                background: url('../img/card-plus.svg') center no-repeat
+            &.active
+                &::before
+                    background: url('../img/card-minus.svg') center no-repeat
+        &__cont
+            font-weight: 300
+            font-size: 14px
+            line-height: 148.8%
+            color: #282828
+            display: none
+            padding-top: 7px
+            p
+                margin-top: 0
+                margin-bottom: 21px
+    &-chooze
+        .catalog__block
+            width: 295px
+    &__num, &__nav
+        display: none
+@media(max-width: 1239px)
+    .card
+        &__left
+            padding-bottom: 0px
+        &__cont
+            width: 450px
+        &__img
+            width: 350px
+            height: 300px
+        &__slider
+            height: 300px
+@media(max-width: 991px)
+    .card
+        &__num
+            display: none
+        &__next
+            transform: rotate(-90deg)
+            right: -3px
+            bottom: 28px
+            display: block
+            width: 20px
+            height: 14px
+        &__img
+            height: 400px
+            display: block
+            width: 100%
+            margin-bottom: 20px
+        &__wrap
+            display: block
+        &__left
+            position: relative
+            display: block
+            margin-bottom: 40px
+        &__cont
+            width: 100%
+        &__slide
+            padding: 0
+            height: 80px
+            &:hover
+                border: 0
+        &__slider
+            height: auto
+            margin-left: 0
+            width: calc(100% - 40px)
+@media(max-width: 575px)
+    .card
+        &__title
+            font-weight: 300
+            font-size: 20px
+            line-height: 121.3%
+            letter-spacing: 0.025em
+            color: #1D1D1B
+            margin-bottom: 25px
+        &__slide
+            height: 70px
+        &__img
+            height: 240px
+        &__title
+            font-size: 16px
+            line-height: 121.3%
+        &__descr
+            p
+                font-size: 12px
+                line-height: 148.8%
+        &-options
+            grid-gap: 0
+            justify-content: space-between
+            &__block
+                width: 49%
+                span
+                    font-size: 13px
+                    line-height: 121.3%
+                    padding: 11px 23px
+                    display: flex
+                    justify-content: center
+        &__count
+            height: 39px
+        &__btn
+            height: 39px
+        &-qa
+            &__title
+                font-size: 18px
+                line-height: 121.3%
+                &::before
+                    top: 10px

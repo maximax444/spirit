@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spirit of insight</title>
+    <link rel="preload" href="fonts/HelveticaNeueCyr-Light.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/HelveticaNeueCyr-Medium.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/ALSRubl.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="icon" href="favicon.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__wrap">
+
+                <ul class="header__menu">
+                    <li>
+                        <a href="">КАТАЛОГ</a>
+                    </li>
+                    <li><a href="">ИГРЫ</a></li>
+                    <li><a href="">КАНЦЕЛЯРИЯ</a></li>
+                </ul>
+                <a href="/" class="header__logo">
+                    <img src="img/logo.svg" alt="">
+                </a>
+                <div class="header__links">
+                    <div class="sear">
+                        <span>
+                            <svg width="21" height="21" viewBox="0 0 21 21" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M20.8606 20.2215L15.0277 14.3882L14.8007 14.1627L15.0061 13.9161C16.28 12.3942 16.9772 10.4722 16.9753 8.48756C16.9753 3.80735 13.1679 0 8.48766 0C3.80739 0 0 3.80735 0 8.48756C0 13.1678 3.80739 16.9751 8.48766 16.9751C10.4719 16.9767 12.3932 16.2795 13.9147 15.0059L14.1628 14.8005L14.3898 15.0275L20.2217 20.8608C20.2634 20.9043 20.3133 20.9389 20.3685 20.9628C20.4237 20.9867 20.4832 20.9994 20.5433 21C20.6035 21.0006 20.6632 20.9892 20.7189 20.9664C20.7746 20.9437 20.8252 20.9101 20.8677 20.8675C20.9103 20.8249 20.9439 20.7743 20.9666 20.7186C20.9893 20.6628 21.0006 20.6031 21 20.543C20.9993 20.4828 20.9866 20.4234 20.9627 20.3682C20.9388 20.313 20.904 20.2631 20.8606 20.2215ZM8.48766 16.0711C4.30611 16.0711 0.904011 12.6691 0.904011 8.48756C0.904011 4.30606 4.30611 0.904001 8.48766 0.904001C12.6692 0.904001 16.0713 4.30606 16.0713 8.48756C16.0713 12.6691 12.6692 16.0711 8.48766 16.0711Z"
+                                    fill="#1D1D1B" class="fill" />
+                            </svg>
+                        </span>
+                        <form action="">
+                            <input type="text" required>
+                            <button>
+                                <svg width="21" height="21" viewBox="0 0 21 21" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M20.8606 20.2215L15.0277 14.3882L14.8007 14.1627L15.0061 13.9161C16.28 12.3942 16.9772 10.4722 16.9753 8.48756C16.9753 3.80735 13.1679 0 8.48766 0C3.80739 0 0 3.80735 0 8.48756C0 13.1678 3.80739 16.9751 8.48766 16.9751C10.4719 16.9767 12.3932 16.2795 13.9147 15.0059L14.1628 14.8005L14.3898 15.0275L20.2217 20.8608C20.2634 20.9043 20.3133 20.9389 20.3685 20.9628C20.4237 20.9867 20.4832 20.9994 20.5433 21C20.6035 21.0006 20.6632 20.9892 20.7189 20.9664C20.7746 20.9437 20.8252 20.9101 20.8677 20.8675C20.9103 20.8249 20.9439 20.7743 20.9666 20.7186C20.9893 20.6628 21.0006 20.6031 21 20.543C20.9993 20.4828 20.9866 20.4234 20.9627 20.3682C20.9388 20.313 20.904 20.2631 20.8606 20.2215ZM8.48766 16.0711C4.30611 16.0711 0.904011 12.6691 0.904011 8.48756C0.904011 4.30606 4.30611 0.904001 8.48766 0.904001C12.6692 0.904001 16.0713 4.30606 16.0713 8.48756C16.0713 12.6691 12.6692 16.0711 8.48766 16.0711Z"
+                                        fill="#fff" class="fill" />
+                                </svg>
+                            </button>
+                        </form>
+                    </div>
+                    <a href="/cart.html" class="header__cart">
+                        <svg width="18" height="23" viewBox="0 0 18 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M9.16706 7.2002H3.14325C2.47659 7.2002 1.92897 7.75582 1.89325 8.46297L1.42897 18.5399C1.35754 20.1942 2.59563 21.5706 4.14325 21.5706H9.21468"
+                                fill="#1D1D1B" class="fill" />
+                            <path
+                                d="M9.16706 7.2002H3.14325C2.47659 7.2002 1.92897 7.75582 1.89325 8.46297L1.42897 18.5399C1.35754 20.1942 2.59563 21.5706 4.14325 21.5706H9.21468"
+                                stroke="#1D1D1B" class="strk" stroke-width="1" stroke-miterlimit="10" />
+                            <path
+                                d="M9.16675 7.2002H15.2025C15.8691 7.2002 16.4167 7.75582 16.4525 8.46297L16.9167 18.5399C16.9882 20.1942 15.7501 21.5706 14.2025 21.5706H9.21437"
+                                fill="#1D1D1B" class="fill" />
+                            <path
+                                d="M9.16675 7.2002H15.2025C15.8691 7.2002 16.4167 7.75582 16.4525 8.46297L16.9167 18.5399C16.9882 20.1942 15.7501 21.5706 14.2025 21.5706H9.21437"
+                                stroke="#1D1D1B" class="strk" stroke-width="1" stroke-miterlimit="10" />
+                            <path
+                                d="M4.88049 8.6271V5.98789C4.88049 3.47497 6.79716 1.44189 9.16621 1.44189C11.5353 1.44189 13.4519 3.47497 13.4519 5.98789V8.6271"
+                                stroke="#1D1D1B" class="strk" stroke-width="1" stroke-miterlimit="10"
+                                stroke-linecap="round" />
+                        </svg>
+                        <span>1</span>
+                    </a>
+                </div>
+                <a href="" class="header__burg"><span></span></a>
+            </div>
+        </div>
+    </header>
+    <!-- <div class="overlay-search">
+        <div class="search animate__animated animate__fadeInDown">
+            <div class="search__close">
+                <img src="img/close.png" alt="">
+            </div>
+            <form action="" class="search__form">
+                <input type="text" placeholder="ЧТО БУДЕМ ИСКАТЬ?" required>
+                <button>
+                    <img src="img/search.svg" alt="">
+                </button>
+            </form>
+        </div>
+    </div> -->
+    <div class="overlay-cart ">
+        <div class="cart animate__animated animate__fadeInRight">
+            <div class="cart__top">
+                <div class="cart__title">КОРЗИНА</div>
+                <div class="cart__close">
+                    <img src="img/close.svg" alt="">
+                </div>
+            </div>
+            <div class="cart-main">
+                <div class="cart-main__block">
+                    <a href="" class="cart-main__img">
+                        <img src="img/cart1.jpg" alt="">
+                    </a>
+                    <div class="cart-main__cont">
+                        <a href="" class="cart-main__name">100 вопросов
+                            для свиданий</a>
+                        <div class="cart-main__descr">Купить премиум-игру в подарочной упаковке</div>
+                        <div class="cart-main__price">6400 <span>b</span></div>
+                        <div class="cart-main__bottom">
+                            <span>КОЛИЧЕСТВО</span>
+                            <div class="cart-main__count">
+                                <button class="minus"><img src="img/minus.svg" alt=""></button>
+                                <input type="number" value="1">
+                                <button class="plus"><img src="img/plus.svg" alt=""></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cart-main__del"><img src="img/close.svg" alt=""></div>
+                </div>
+                <div class="cart-main__block">
+                    <a href="" class="cart-main__img">
+                        <img src="img/cart2.jpg" alt="">
+                    </a>
+                    <div class="cart-main__cont">
+                        <a href="" class="cart-main__name">100 вопросов
+                            для ЗНАКОМСТВА
+                            С СОБОЙ И ПАРТНЕРОМ</a>
+                        <div class="cart-main__descr">Купить премиум-игру в подарочной упаковке</div>
+                        <div class="cart-main__price">3000 <span>b</span></div>
+                        <div class="cart-main__bottom">
+                            <span>КОЛИЧЕСТВО</span>
+                            <div class="cart-main__count">
+                                <button class="minus"><img src="img/minus.svg" alt=""></button>
+                                <input type="number" value="1">
+                                <button class="plus"><img src="img/plus.svg" alt=""></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cart-main__del"><img src="img/close.svg" alt=""></div>
+                </div>
+            </div>
+            <div class="cart-sum">
+                <div class="cart-sum__title">СУММА:</div>
+                <div class="cart-sum__price">
+                    <div class="old">12400 <span>b</span></div> 9920 <span>b</span>
+                </div>
+            </div>
+            <form action="" class="cart__promo">
+                <input type="text" placeholder="Введите промокод" required>
+                <span>Скидка 20% активирована!</span>
+                <button>АКТИВИРОВАТЬ</button>
+            </form>
+            <form class="cart__form">
+                <div class="cart__block">
+                    <div class="cart__title">КОНТАКТНАЯ ИНФОРМАЦИЯ:</div>
+                    <div class="cart__contact">
+                        <input type="text" placeholder="Как к Вам обращаться*" required>
+                        <input type="tel" placeholder="Ваш контактный номер*" required>
+                        <input type="email" placeholder="E-mail">
+                        <input type="text" placeholder="Кому доставить заказ">
+                    </div>
+                </div>
+                <div class="cart__block">
+                    <div class="cart__title">УДОБНЫЙ СПОСОБ ДЛЯ СВЯЗИ</div>
+                    <div class="cart__search">
+                        <input type="hidden" name="" value="Позвонить">
+                        <div class="cart__search-top">Позвонить</div>
+                        <div class="cart__search-drop">
+                            <a href="">Whatsapp</a>
+                            <a href="">Telegram</a>
+                            <a href="">Не тревожить</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="cart__block">
+                    <div class="cart__title">ДОСТАВКА:</div>
+                    <div class="cart__contact">
+                        <input type="text" placeholder="Город" required>
+                        <input type="text" placeholder="Улица" required>
+                        <input type="text" placeholder="Дом" required>
+                        <input type="text" placeholder="Квартира / офис" required>
+                    </div>
+                    <label class="cart__check">
+                        <input type="checkbox" name="" id="" checked required>
+                        <span></span>
+                        <p><span>Доставка по России</span>от 10 дней 600 <b>b</b></p>
+                    </label>
+                </div>
+                <label class="cart__check">
+                    <input type="checkbox" name="" id="" checked required>
+                    <span></span>
+                    <p>Согласен с правилами обработки персональных данных</p>
+                </label>
+                <div class="cart-end">
+                    <div class="cart-end__title">СУММА:</div>
+                    <div class="cart-end__price">12400 <span>b</span></div>
+                </div>
+                <button class="cart-end__btn">ОФОРМИТЬ ЗАКАЗ</button>
+            </form>
+        </div>
+    </div>
+    <div class="mob-menu">
+        <div class="sear">
+            <span>
+                <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M20.8606 20.2215L15.0277 14.3882L14.8007 14.1627L15.0061 13.9161C16.28 12.3942 16.9772 10.4722 16.9753 8.48756C16.9753 3.80735 13.1679 0 8.48766 0C3.80739 0 0 3.80735 0 8.48756C0 13.1678 3.80739 16.9751 8.48766 16.9751C10.4719 16.9767 12.3932 16.2795 13.9147 15.0059L14.1628 14.8005L14.3898 15.0275L20.2217 20.8608C20.2634 20.9043 20.3133 20.9389 20.3685 20.9628C20.4237 20.9867 20.4832 20.9994 20.5433 21C20.6035 21.0006 20.6632 20.9892 20.7189 20.9664C20.7746 20.9437 20.8252 20.9101 20.8677 20.8675C20.9103 20.8249 20.9439 20.7743 20.9666 20.7186C20.9893 20.6628 21.0006 20.6031 21 20.543C20.9993 20.4828 20.9866 20.4234 20.9627 20.3682C20.9388 20.313 20.904 20.2631 20.8606 20.2215ZM8.48766 16.0711C4.30611 16.0711 0.904011 12.6691 0.904011 8.48756C0.904011 4.30606 4.30611 0.904001 8.48766 0.904001C12.6692 0.904001 16.0713 4.30606 16.0713 8.48756C16.0713 12.6691 12.6692 16.0711 8.48766 16.0711Z"
+                        fill="#1D1D1B" class="fill" />
+                </svg>
+            </span>
+            <form action="">
+                <input type="text" required>
+                <button>
+                    <img src="img/search-mob.svg" alt="">
+                </button>
+            </form>
+        </div>
+        <div class="header__close">
+            <img src="img/close.svg" alt="">
+        </div>
+        <ul class="mob-menu__wrap">
+            <li><a href="">КАТАЛОГ</a></li>
+            <li><a href="">ИГРЫ</a></li>
+            <li><a href="">КАНЦЕЛЯРИЯ</a></li>
+
+        </ul>
+        <ul class="mob-menu__small">
+            <li><a href="">о компании</a></li>
+            <li><a href="">команда</a></li>
+            <li><a href="">контакты</a></li>
+            <li><a href="">оптовым клиентам</a></li>
+            <li><a href="">договор оферты</a></li>
+            <li><a href="">доставка и оплата</a></li>
+            <li><a href="">каталог</a></li>
+            <li><a href="">FAQ</a></li>
+            <li><a href="">политика возврата</a></li>
+            <li><a href="">политика конфиденциальности</a></li>
+        </ul>
+        <div class="footer__soc">
+            <a href="">
+                <img src="img/fsoc1.png" alt="">
+            </a>
+            <a href="">
+                <img src="img/fsoc2.png" alt="">
+            </a>
+        </div>
+    </div>
+    <section class="main">
+        <div class="container">
+            <div class="main__wrap">
+                <div class="main__all">
+                    <a href="" class="main__block animate__animated animate__backInLeft">
+                        <div class="main__img">
+                            <img src="img/main1-1.jpg" alt="">
+                        </div>
+                        <div class="main__name">больше, чем игры</div>
+                        <div class="main__link">хочу <img src="img/main-link.svg" alt=""></div>
+                    </a>
+                    <a href="" class="main__block animate__animated animate__backInRight">
+                        <div class="main__img">
+                            <img src="img/main1-2.jpg" alt="">
+                        </div>
+                        <div class="main__name">канцелярия со смыслом</div>
+                        <div class="main__link">хочу <img src="img/main-link.svg" alt=""></div>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section class="home-games">
+        <div class="container">
+            <h2 class="home-games__title">бестселлеры</h2>
+            <div class="home-games__wrap">
+                <div class="home-games__prev">
+                    <img src="img/prev.svg" alt="">
+                </div>
+                <div class="home-games__next">
+                    <img src="img/next.svg" alt="">
+                </div>
+                <div class="swiper">
+                    <div class="home-games__slider swiper-wrapper">
+                        <a href="" class="home-games__block swiper-slide">
+                            <div class="home-games__img">
+                                <img src="img/home/games1.png" alt="">
+                            </div>
+                            <div class="home-games__name">Игра для родителей
+                                и детей</div>
+                            <div class="home-games__price">3000 <span>b</span></div>
+                        </a>
+                        <a href="" class="home-games__block swiper-slide">
+                            <div class="home-games__img">
+                                <img src="img/home/games2.png" alt="">
+                            </div>
+                            <div class="home-games__name">Игра для него
+                                и для нее</div>
+                            <div class="home-games__price">3000 <span>b</span></div>
+                        </a>
+                        <a href="" class="home-games__block swiper-slide">
+                            <div class="home-games__img">
+                                <img src="img/home/games3.png" alt="">
+                            </div>
+                            <div class="home-games__name">Игра для родителей
+                                и детей</div>
+                            <div class="home-games__price">3000 <span>b</span></div>
+                        </a>
+                        <a href="" class="home-games__block swiper-slide">
+                            <div class="home-games__img">
+                                <img src="img/home/games4.png" alt="">
+                            </div>
+                            <div class="home-games__name">Игра для первых
+                                свиданий</div>
+                            <div class="home-games__price">3000 <span>b</span></div>
+                        </a>
+                        <a href="" class="home-games__block swiper-slide">
+                            <div class="home-games__img">
+                                <img src="img/home/games5.png" alt="">
+                            </div>
+                            <div class="home-games__name">Игра для родителей
+                                и детей</div>
+                            <div class="home-games__price">3000 <span>b</span></div>
+                        </a>
+                        <a href="" class="home-games__block swiper-slide">
+                            <div class="home-games__img">
+                                <img src="img/home/games1.png" alt="">
+                            </div>
+                            <div class="home-games__name">Игра для родителей
+                                и детей</div>
+                            <div class="home-games__price">3000 <span>b</span></div>
+                        </a>
+                        <a href="" class="home-games__block swiper-slide">
+                            <div class="home-games__img">
+                                <img src="img/home/games2.png" alt="">
+                            </div>
+                            <div class="home-games__name">Игра для него
+                                и для нее</div>
+                            <div class="home-games__price">3000 <span>b</span></div>
+                        </a>
+                        <a href="" class="home-games__block swiper-slide">
+                            <div class="home-games__img">
+                                <img src="img/home/games3.png" alt="">
+                            </div>
+                            <div class="home-games__name">Игра для родителей
+                                и детей</div>
+                            <div class="home-games__price">3000 <span>b</span></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="home-clients">
+        <div class="container">
+            <h2 class="home-clients__title wow animate__animated animate__fadeInLeft">клиенты о нас</h2>
+            <div class="home-clients__wrap">
+                <div class="home-clients__prev"><img src="img/prev.svg" alt=""></div>
+                <div class="home-clients__next"><img src="img/next.svg" alt=""></div>
+                <div class="swiper">
+                    <div class="home-clients__slider swiper-wrapper">
+                        <a data-fancybox="gallery" href="img/hc1.png" class="home-clients__block swiper-slide">
+                            <img src="img/hc1.png" alt="">
+                        </a>
+                        <a data-fancybox="gallery" href="img/hc2.png" class="home-clients__block swiper-slide">
+                            <img src="img/hc2.png" alt="">
+                        </a>
+                        <a data-fancybox="gallery" href="img/hc3.png" class="home-clients__block swiper-slide">
+                            <img src="img/hc3.png" alt="">
+                        </a>
+                        <a data-fancybox="gallery" href="img/hc4.png" class="home-clients__block swiper-slide">
+                            <img src="img/hc4.png" alt="">
+                        </a>
+                        <a data-fancybox="gallery" href="img/hc1.png" class="home-clients__block swiper-slide">
+                            <img src="img/hc1.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section class="home-cat">
+        <div class="container">
+            <h2 class="home-cat__title">выберите игру</h2>
+            <div class="home-cat__wrap">
+                <div class="home-cat__block">
+                    <a href="" class="home-cat__img">
+                        <img src="img/cat1.jpg" alt="">
+                    </a>
+                    <div class="home-cat__prem">premium</div>
+                    <a href="" class="home-cat__name">откровенная игра для двоих</a>
+                    <p class="home-cat__descr">Дескриптор, раскрывающий игру. <br>
+                        В одну-две строки.</p>
+                    <div class="home-cat__bot">
+                        <div class="home-cat__price">3000 </div>
+                        <button class="home-cat__btn active">
+                            <svg width="18" height="23" viewBox="0 0 18 23" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M9.16706 7.2002H3.14325C2.47659 7.2002 1.92897 7.75582 1.89325 8.46297L1.42897 18.5399C1.35754 20.1942 2.59563 21.5706 4.14325 21.5706H9.21468"
+                                    fill="#1D1D1B" class="fill" />
+                                <path
+                                    d="M9.16706 7.2002H3.14325C2.47659 7.2002 1.92897 7.75582 1.89325 8.46297L1.42897 18.5399C1.35754 20.1942 2.59563 21.5706 4.14325 21.5706H9.21468"
+                                    stroke="#1D1D1B" class="strk" stroke-width="1" stroke-miterlimit="10" />
+                                <path
+                                    d="M9.16675 7.2002H15.2025C15.8691 7.2002 16.4167 7.75582 16.4525 8.46297L16.9167 18.5399C16.9882 20.1942 15.7501 21.5706 14.2025 21.5706H9.21437"
+                                    fill="#1D1D1B" class="fill" />
+                                <path
+                                    d="M9.16675 7.2002H15.2025C15.8691 7.2002 16.4167 7.75582 16.4525 8.46297L16.9167 18.5399C16.9882 20.1942 15.7501 21.5706 14.2025 21.5706H9.21437"
+                                    stroke="#1D1D1B" class="strk" stroke-width="1" stroke-miterlimit="10" />
+                                <path
+                                    d="M4.88049 8.6271V5.98789C4.88049 3.47497 6.79716 1.44189 9.16621 1.44189C11.5353 1.44189 13.4519 3.47497 13.4519 5.98789V8.6271"
+                                    stroke="#1D1D1B" class="strk" stroke-width="1" stroke-miterlimit="10"
+                                    stroke-linecap="round" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="home-cat__block">
+                    <a href="" class="home-cat__img">
+                        <img src="img/cat2.jpg" alt="">
+                    </a>
+                    <div class="home-cat__prem">premium</div>
+                    <a href="" class="home-cat__name">откровенная игра для двоих</a>
+                    <p class="home-cat__descr">Дескриптор, раскрывающий игру. <br>
+                        В одну-две строки.</p>
+                    <div class="home-cat__bot">
+                        <div class="home-cat__price">3000 </div>
+                        <button class="home-cat__btn">
+                            <svg width="18" height="23" viewBox="0 0 18 23" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M9.16706 7.2002H3.14325C2.47659 7.2002 1.92897 7.75582 1.89325 8.46297L1.42897 18.5399C1.35754 20.1942 2.59563 21.5706 4.14325 21.5706H9.21468"
+                                    fill="#1D1D1B" class="fill" />
+                                <path
+                                    d="M9.16706 7.2002H3.14325C2.47659 7.2002 1.92897 7.75582 1.89325 8.46297L1.42897 18.5399C1.35754 20.1942 2.59563 21.5706 4.14325 21.5706H9.21468"
+                                    stroke="#1D1D1B" class="strk" stroke-width="1" stroke-miterlimit="10" />
+                                <path
+                                    d="M9.16675 7.2002H15.2025C15.8691 7.2002 16.4167 7.75582 16.4525 8.46297L16.9167 18.5399C16.9882 20.1942 15.7501 21.5706 14.2025 21.5706H9.21437"
+                                    fill="#1D1D1B" class="fill" />
+                                <path
+                                    d="M9.16675 7.2002H15.2025C15.8691 7.2002 16.4167 7.75582 16.4525 8.46297L16.9167 18.5399C16.9882 20.1942 15.7501 21.5706 14.2025 21.5706H9.21437"
+                                    stroke="#1D1D1B" class="strk" stroke-width="1" stroke-miterlimit="10" />
+                                <path
+                                    d="M4.88049 8.6271V5.98789C4.88049 3.47497 6.79716 1.44189 9.16621 1.44189C11.5353 1.44189 13.4519 3.47497 13.4519 5.98789V8.6271"
+                                    stroke="#1D1D1B" class="strk" stroke-width="1" stroke-miterlimit="10"
+                                    stroke-linecap="round" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="home-cat__block">
+                    <a href="" class="home-cat__img">
+                        <img src="img/cat3.jpg" alt="">
+                    </a>
+                    <div class="home-cat__prem">premium</div>
+                    <a href="" class="home-cat__name">откровенная игра для двоих</a>
+                    <p class="home-cat__descr">Дескриптор, раскрывающий игру. <br>
+                        В одну-две строки.</p>
+                    <div class="home-cat__bot">
+                        <div class="home-cat__price">3000 </div>
+                        <button class="home-cat__btn">
+                            <svg width="18" height="23" viewBox="0 0 18 23" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M9.16706 7.2002H3.14325C2.47659 7.2002 1.92897 7.75582 1.89325 8.46297L1.42897 18.5399C1.35754 20.1942 2.59563 21.5706 4.14325 21.5706H9.21468"
+                                    fill="#1D1D1B" class="fill" />
+                                <path
+                                    d="M9.16706 7.2002H3.14325C2.47659 7.2002 1.92897 7.75582 1.89325 8.46297L1.42897 18.5399C1.35754 20.1942 2.59563 21.5706 4.14325 21.5706H9.21468"
+                                    stroke="#1D1D1B" class="strk" stroke-width="1" stroke-miterlimit="10" />
+                                <path
+                                    d="M9.16675 7.2002H15.2025C15.8691 7.2002 16.4167 7.75582 16.4525 8.46297L16.9167 18.5399C16.9882 20.1942 15.7501 21.5706 14.2025 21.5706H9.21437"
+                                    fill="#1D1D1B" class="fill" />
+                                <path
+                                    d="M9.16675 7.2002H15.2025C15.8691 7.2002 16.4167 7.75582 16.4525 8.46297L16.9167 18.5399C16.9882 20.1942 15.7501 21.5706 14.2025 21.5706H9.21437"
+                                    stroke="#1D1D1B" class="strk" stroke-width="1" stroke-miterlimit="10" />
+                                <path
+                                    d="M4.88049 8.6271V5.98789C4.88049 3.47497 6.79716 1.44189 9.16621 1.44189C11.5353 1.44189 13.4519 3.47497 13.4519 5.98789V8.6271"
+                                    stroke="#1D1D1B" class="strk" stroke-width="1" stroke-miterlimit="10"
+                                    stroke-linecap="round" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="home-cat__block">
+                    <a href="" class="home-cat__img">
+                        <img src="img/cat4.jpg" alt="">
+                    </a>
+                    <div class="home-cat__prem">premium</div>
+                    <a href="" class="home-cat__name">откровенная игра для двоих</a>
+                    <p class="home-cat__descr">Дескриптор, раскрывающий игру. <br>
+                        В одну-две строки.</p>
+                    <div class="home-cat__bot">
+                        <div class="home-cat__price">3000 </div>
+                        <button class="home-cat__btn">
+                            <svg width="18" height="23" viewBox="0 0 18 23" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M9.16706 7.2002H3.14325C2.47659 7.2002 1.92897 7.75582 1.89325 8.46297L1.42897 18.5399C1.35754 20.1942 2.59563 21.5706 4.14325 21.5706H9.21468"
+                                    fill="#1D1D1B" class="fill" />
+                                <path
+                                    d="M9.16706 7.2002H3.14325C2.47659 7.2002 1.92897 7.75582 1.89325 8.46297L1.42897 18.5399C1.35754 20.1942 2.59563 21.5706 4.14325 21.5706H9.21468"
+                                    stroke="#1D1D1B" class="strk" stroke-width="1" stroke-miterlimit="10" />
+                                <path
+                                    d="M9.16675 7.2002H15.2025C15.8691 7.2002 16.4167 7.75582 16.4525 8.46297L16.9167 18.5399C16.9882 20.1942 15.7501 21.5706 14.2025 21.5706H9.21437"
+                                    fill="#1D1D1B" class="fill" />
+                                <path
+                                    d="M9.16675 7.2002H15.2025C15.8691 7.2002 16.4167 7.75582 16.4525 8.46297L16.9167 18.5399C16.9882 20.1942 15.7501 21.5706 14.2025 21.5706H9.21437"
+                                    stroke="#1D1D1B" class="strk" stroke-width="1" stroke-miterlimit="10" />
+                                <path
+                                    d="M4.88049 8.6271V5.98789C4.88049 3.47497 6.79716 1.44189 9.16621 1.44189C11.5353 1.44189 13.4519 3.47497 13.4519 5.98789V8.6271"
+                                    stroke="#1D1D1B" class="strk" stroke-width="1" stroke-miterlimit="10"
+                                    stroke-linecap="round" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="home-cat__block">
+                    <a href="" class="home-cat__img">
+                        <img src="img/cat5.jpg" alt="">
+                    </a>
+                    <div class="home-cat__prem">premium</div>
+                    <a href="" class="home-cat__name">откровенная игра для двоих</a>
+                    <p class="home-cat__descr">Дескриптор, раскрывающий игру. <br>
+                        В одну-две строки.</p>
+                    <div class="home-cat__bot">
+                        <div class="home-cat__price">3000 </div>
+                        <button class="home-cat__btn">
+                            <svg width="18" height="23" viewBox="0 0 18 23" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M9.16706 7.2002H3.14325C2.47659 7.2002 1.92897 7.75582 1.89325 8.46297L1.42897 18.5399C1.35754 20.1942 2.59563 21.5706 4.14325 21.5706H9.21468"
+                                    fill="#1D1D1B" class="fill" />
+                                <path
+                                    d="M9.16706 7.2002H3.14325C2.47659 7.2002 1.92897 7.75582 1.89325 8.46297L1.42897 18.5399C1.35754 20.1942 2.59563 21.5706 4.14325 21.5706H9.21468"
+                                    stroke="#1D1D1B" class="strk" stroke-width="1" stroke-miterlimit="10" />
+                                <path
+                                    d="M9.16675 7.2002H15.2025C15.8691 7.2002 16.4167 7.75582 16.4525 8.46297L16.9167 18.5399C16.9882 20.1942 15.7501 21.5706 14.2025 21.5706H9.21437"
+                                    fill="#1D1D1B" class="fill" />
+                                <path
+                                    d="M9.16675 7.2002H15.2025C15.8691 7.2002 16.4167 7.75582 16.4525 8.46297L16.9167 18.5399C16.9882 20.1942 15.7501 21.5706 14.2025 21.5706H9.21437"
+                                    stroke="#1D1D1B" class="strk" stroke-width="1" stroke-miterlimit="10" />
+                                <path
+                                    d="M4.88049 8.6271V5.98789C4.88049 3.47497 6.79716 1.44189 9.16621 1.44189C11.5353 1.44189 13.4519 3.47497 13.4519 5.98789V8.6271"
+                                    stroke="#1D1D1B" class="strk" stroke-width="1" stroke-miterlimit="10"
+                                    stroke-linecap="round" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <div class="home-cat__block">
+                    <a href="" class="home-cat__img">
+                        <img src="img/cat6.jpg" alt="">
+                    </a>
+                    <div class="home-cat__prem">premium</div>
+                    <a href="" class="home-cat__name">откровенная игра для двоих</a>
+                    <p class="home-cat__descr">Дескриптор, раскрывающий игру. <br>
+                        В одну-две строки.</p>
+                    <div class="home-cat__bot">
+                        <div class="home-cat__price">3000 </div>
+                        <button class="home-cat__btn">
+                            <svg width="18" height="23" viewBox="0 0 18 23" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M9.16706 7.2002H3.14325C2.47659 7.2002 1.92897 7.75582 1.89325 8.46297L1.42897 18.5399C1.35754 20.1942 2.59563 21.5706 4.14325 21.5706H9.21468"
+                                    fill="#1D1D1B" class="fill" />
+                                <path
+                                    d="M9.16706 7.2002H3.14325C2.47659 7.2002 1.92897 7.75582 1.89325 8.46297L1.42897 18.5399C1.35754 20.1942 2.59563 21.5706 4.14325 21.5706H9.21468"
+                                    stroke="#1D1D1B" class="strk" stroke-width="1" stroke-miterlimit="10" />
+                                <path
+                                    d="M9.16675 7.2002H15.2025C15.8691 7.2002 16.4167 7.75582 16.4525 8.46297L16.9167 18.5399C16.9882 20.1942 15.7501 21.5706 14.2025 21.5706H9.21437"
+                                    fill="#1D1D1B" class="fill" />
+                                <path
+                                    d="M9.16675 7.2002H15.2025C15.8691 7.2002 16.4167 7.75582 16.4525 8.46297L16.9167 18.5399C16.9882 20.1942 15.7501 21.5706 14.2025 21.5706H9.21437"
+                                    stroke="#1D1D1B" class="strk" stroke-width="1" stroke-miterlimit="10" />
+                                <path
+                                    d="M4.88049 8.6271V5.98789C4.88049 3.47497 6.79716 1.44189 9.16621 1.44189C11.5353 1.44189 13.4519 3.47497 13.4519 5.98789V8.6271"
+                                    stroke="#1D1D1B" class="strk" stroke-width="1" stroke-miterlimit="10"
+                                    stroke-linecap="round" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="home-cat__end">
+                <a href="/catalog.html" class="home-cat__more">смотреть все</a>
+            </div>
+        </div>
+    </section>
+    <section class="home-call">
+        <div class="container">
+            <div class="home-call__all">
+                <div class="home-call__img wow animate__animated animate__backInLeft">
+                    <img src="img/home/call.jpg" alt="">
+                </div>
+                <div class="home-call__cont wow animate__animated animate__fadeInRight">
+                    <div class="home-call__wrap">
+                        <h2 class="home-call__title">ХОТИТЕ СКИДКУ<br>
+                            НА СЛЕДУЮЩУЮ ИГРУ?</h2>
+                        <div class="home-call__subtitle">Добавьте отзыв в два клика <br>
+                            и получите персональную скидку 20%</div>
+                        <form action="" class="home-call__form">
+                            <input type="text" placeholder="имя" required>
+                            <input type="email" placeholder="email" required>
+                            <label class="home-call__check">
+                                <input type="checkbox" name="" id="" checked required>
+                                <span></span>
+                                <span class="home-call__check-text">Согласен с <a href="">правилами
+                                        обработки<br> персональных данных</a></span>
+                            </label>
+                            <div class="home-call__end">
+                                <label class="home-call__file">
+                                    <input type="file" name="" id="">
+                                    <div class="home-call__add">ЗАГРУЗИТЬ ФОТО +</div>
+                                </label>
+                                <button>ПОЛУЧИТЬ СКИДКУ!</button>
+                            </div>
+
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Модалка после добавления в корзину (Пример вызова в main.js строка 342) -->
+    <div class="overlay overlay-stock overlay-start overlay-active">
+        <div class="popup">
+            <div class="overlay-start__img">
+                <img src="img/age-logo.svg" alt="">
+            </div>
+            <div class="overlay-start__title">Подтвердите ваш возраст
+            </div>
+            <div class="overlay-start__subtitle">Товары доступны посетителям, достигшим 18 лет</div>
+            <div class="overlay-start__btns">
+                <button class="overlay-start__submit">мне есть 18 лет</button>
+                <button class="overlay-start__end" onclick="">нет</button>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__wrap">
+                <div class="footer__left">
+                    <div class="footer__copy">© 2020-2022 <br>
+                        ООО «ИНСАЙТ» ИНН: 9717094104</div>
+                    <div class="footer__adres">
+                        Москва, <br>
+                        пр-т Мира, дом 102, стр.34, эт.1. кмн. 13
+                    </div>
+                </div>
+                <ul class="footer__menu">
+                    <li><a href="">о компании</a></li>
+                    <li><a href="">команда</a></li>
+                    <li><a href="">контакты</a></li>
+                    <li><a href="">оптовым клиентам</a></li>
+                    <li><a href="">договор оферты</a></li>
+                </ul>
+                <ul class="footer__menu">
+                    <li><a href="">доставка и оплата</a></li>
+                    <li><a href="">каталог</a></li>
+                    <li><a href="">FAQ</a></li>
+                    <li><a href="">политика возврата</a></li>
+                    <li><a href="">политика конфиденциальности</a></li>
+                </ul>
+                <div class="footer__right">
+                    <div class="footer__text">Любое использование либо копирование материалов или подборки материалов
+                        сайта, элементов дизайна и оформления
+                        допускается лишь с разрешения правообладателя и только со ссылкой на источник:
+                        spiritofinsight.com.
+                    </div>
+                    <div class="footer__soc">
+                        <a href="">
+                            <img src="img/fsoc1.png" alt="">
+                        </a>
+                        <a href="">
+                            <img src="img/fsoc2.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.1.slim.min.js"
+        integrity="sha256-w8CvhFs7iHNVUtnSP0YKEg00p9Ih13rlL9zGqvLdePA=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js">
+    </script>
+    <script>
+        new WOW({
+            mobile: false,
+        }).init();
+    </script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

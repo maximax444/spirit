@@ -1,0 +1,187 @@
+.delivery
+    padding: 50px 0
+    padding-bottom: 3px
+    &__title
+        font-weight: 300
+        font-size: 23px
+        line-height: 121.3%
+        text-transform: uppercase
+        color: #1D1D1B
+        margin-bottom: 37px
+        margin-top: 0
+    &__links
+        display: flex
+        align-items: center
+        flex-wrap: wrap
+        grid-gap: 17px
+        margin-bottom: 66px
+        a
+            height: 114px
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            text-decoration: none
+            border: 1px solid #D2D2D2
+            padding: 0 30px
+            span
+                font-weight: 300
+                font-size: 14px
+                line-height: 14px
+                letter-spacing: 0.075em
+                color: #1D1D1B
+            &:hover
+                border: 1px solid #1D1D1B
+            &.active
+                border: 1px solid #1D1D1B
+                pointer-events: none
+        &-img
+            width: 40px
+            height: 40px
+    &__text
+        h1
+            margin: 0
+            font-weight: 700
+            font-size: 18px
+            line-height: 121.3%
+            color: #1D1D1B
+            margin-bottom: 7px
+            text-transform: uppercase
+        h2
+            margin: 0
+            margin-top: 29px
+            font-weight: 700
+            font-size: 18px
+            line-height: 121.3%
+            color: #1D1D1B
+            margin-bottom: 7px
+            text-transform: uppercase
+            span
+                font-weight: 400
+                font-size: 18px
+                line-height: 35px
+                display: block
+                text-transform: none
+        ul
+            padding: 0
+            margin: 0
+            margin-bottom: 30px
+            list-style-type: none
+            li
+                font-weight: 400
+                font-size: 14px
+                line-height: 21px
+                padding: 10px 0
+                color: #1D1D1B
+                padding-left: 20px
+                position: relative
+                &::before
+                    content: ""
+                    display: block
+                    width: 4px
+                    height: 4px
+                    background: #1D1D1B
+                    border-radius: 50%
+                    position: absolute
+                    left: 0
+                    top: 18px
+        p
+            font-weight: 400
+            font-size: 14px
+            line-height: 148%
+            color: #1D1D1B
+            margin: 0
+            margin-bottom: 21px
+            margin-top: 17px
+        .alert
+            font-size: 18px
+            line-height: 118%
+            font-weight: 300
+            color: #1D1D1B
+            margin: 40px 0
+            span
+                font-weight: 550
+    &-pay
+        padding-top: 10px
+        font-weight: 300
+        font-size: 14px
+        line-height: 148%
+        color: #1D1D1B
+        &__imgs
+            padding-top: 3px
+            display: flex
+            align-items: center
+            grid-gap: 10px
+            margin-bottom: 6px
+            img:last-child
+                margin-left: 10px
+    &__btns
+        display: flex
+        align-items: center
+        grid-gap: 19px
+        margin-top: -20px
+        margin-bottom: 45px
+        a
+            height: 39px
+            font-weight: 300
+            font-size: 14px
+            line-height: 121.3%
+            letter-spacing: 0.075em
+            color: #fff
+            background-color: #1D1D1B
+            display: flex
+            justify-content: center
+            align-items: center
+            text-decoration: none
+            padding: 0 24px
+            border: 0px solid #000000
+            &:hover
+                color: #fff
+                background-color: #868686
+@media(max-width: 767px)
+    .delivery
+        &__links
+            flex-wrap: nowrap
+            overflow-x: scroll
+            a
+                span
+                    white-space: nowrap
+            &.oferta
+                a:nth-child(2)
+                    order: -1
+            &.refund
+                a:nth-child(3)
+                    order: -1
+            &.polit
+                a:nth-child(4)
+                    order: -1
+        &__btns
+            flex-wrap: wrap
+            a
+                width: 100%
+                padding: 0 4px
+@media(max-width: 575px)
+    .delivery
+        padding-top: 23px
+        padding-bottom: 23px
+        &__links
+            margin-left: -15px
+            margin-right: -15px
+            padding: 0 15px
+            margin-bottom: 54px
+        &__text
+            h2, h1
+                font-size: 18px
+                line-height: 121.3%
+                span
+                    font-size: 16px
+            .alert
+                font-size: 16px
+                line-height: 156%
+        &-pay__imgs
+            flex-wrap: wrap
+@media(max-width: 359px)
+    .delivery
+        &__btns
+            a
+                font-size: 13px
