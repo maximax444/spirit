@@ -1,5 +1,4 @@
 # Изменения
-=
 1. ***Шапка, футер***. Брать с главной страницы, туда же мобильное меню
 2. ***Главная***. Все блоки
 3. ***Каталог***.
@@ -14,7 +13,7 @@
     ```javascript
     $('.overlay-add').addClass('overlay-active');
     $('body').css("overflow", "hidden");
-    ```javascript
+    ```
 11. ***Модалка возраста***. Лежит на главной
 
 ## Пара моментов
@@ -26,4 +25,4 @@
         $(this).addClass('hide');
         $('.ncart-promo__show').addClass('show');
     });
-    ```javascript
+    ```
