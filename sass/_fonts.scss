@@ -1,36 +1,49 @@
-@font-face {
-    font-family: 'HelveticaNeueCyr';
-    src: url('../fonts/HelveticaNeueCyr-Light.eot');
-    src: url('../fonts/HelveticaNeueCyr-Light.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/HelveticaNeueCyr-Light.woff2') format('woff2'),
-        url('../fonts/HelveticaNeueCyr-Light.woff') format('woff');
-    font-weight: 300;
-    font-style: normal;
-    font-display: swap;
-}
+
+
+
+
 
 @font-face {
     font-family: 'HelveticaNeueCyr';
-    src: url('../fonts/HelveticaNeueCyr-Medium.eot');
-    src: url('../fonts/HelveticaNeueCyr-Medium.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/HelveticaNeueCyr-Medium.woff2') format('woff2'),
-        url('../fonts/HelveticaNeueCyr-Medium.woff') format('woff');
+    src: url('../fonts/helveticaneuecyr-medium-webfont.eot');
+    src: url('../fonts/helveticaneuecyr-medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/helveticaneuecyr-medium-webfont.woff2') format('woff2'),
+         url('../fonts/helveticaneuecyr-medium-webfont.woff') format('woff'),
+         url('../fonts/helveticaneuecyr-medium-webfont.ttf') format('truetype');
     font-weight: 550;
     font-style: normal;
-    font-display: swap;
+
 }
+
+
+
 
 @font-face {
     font-family: 'HelveticaNeueCyr';
-    src: url('../fonts/HelveticaNeueCyr-Roman.eot');
-    src: url('../fonts/HelveticaNeueCyr-Roman.eot?#iefix') format('embedded-opentype'),
-        url('../fonts/HelveticaNeueCyr-Roman.woff2') format('woff2'),
-        url('../fonts/HelveticaNeueCyr-Roman.woff') format('woff');
+    src: url('../fonts/helveticaneuecyr-roman-webfont.eot');
+    src: url('../fonts/helveticaneuecyr-roman-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/helveticaneuecyr-roman-webfont.woff2') format('woff2'),
+         url('../fonts/helveticaneuecyr-roman-webfont.woff') format('woff'),
+         url('../fonts/helveticaneuecyr-roman-webfont.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
-    font-display: swap;
+
 }
 
+
+
+
+@font-face {
+    font-family: 'HelveticaNeueCyr';
+    src: url('../fonts/helveticaneuecyr-light-webfont.eot');
+    src: url('../fonts/helveticaneuecyr-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/helveticaneuecyr-light-webfont.woff2') format('woff2'),
+         url('../fonts/helveticaneuecyr-light-webfont.woff') format('woff'),
+         url('../fonts/helveticaneuecyr-light-webfont.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+
+}
 @font-face {
     font-family: 'ALS Rubl';
     src: url('../fonts/ALSRubl.eot');
