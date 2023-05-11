@@ -1,0 +1,100 @@
+.taro
+    padding-bottom: 100px
+    padding-top: 25px
+    &__main
+        height: 440px
+        margin-bottom: 50px
+        img
+            width: 100%
+            height: 100%
+            object-fit: cover
+    &__wrap
+        display: grid
+        grid-template-columns: repeat(2,1fr)
+        grid-gap: 64px
+    &__img
+        display: block
+        width: 100%
+        height: 365px
+        margin-bottom: 27px
+        overflow: hidden
+        img
+            width: 100%
+            height: 100%
+            object-fit: cover
+            transition: all 0.3s
+        &:hover
+            img
+                transform: scale(1.2)
+    &__name
+        font-weight: 300
+        font-size: 30px
+        line-height: 123%
+        letter-spacing: -0.025em
+        text-transform: uppercase
+        margin-bottom: 10px
+        text-decoration: none
+        display: block
+        color: #282828
+    &__descr
+        margin: 0
+        margin-bottom: 20px
+        font-weight: 300
+        font-size: 20px
+        line-height: 30px
+        color: #282828
+    &__bot
+        display: flex
+        align-items: center
+        justify-content: space-between
+    &__price
+        font-weight: 700
+        font-size: 27px
+        line-height: 121.3%
+        color: #282828
+    &__btn
+        padding: 0
+        background: transparent
+        cursor: pointer
+        border: 0
+        .fill
+            transition: all 0.3s
+            fill: transparent
+        .strk
+            transition: all 0.3s
+        &:hover
+            .fill
+                fill: #868686
+            .strk
+                stroke: #868686
+        &.active
+            .fill
+                fill: #1D1D1B
+@media(max-width: 1239px)
+    .taro__wrap
+        grid-gap: 20px
+@media(max-width: 767px)
+    .taro__wrap
+        grid-template-columns: repeat(1, 1fr)
+        grid-gap: 40px
+@media(max-width: 575px)
+    .taro
+        padding-bottom: 50px
+        &__main
+            height: 210px
+        &__img
+            height: 240px
+        &__name
+            font-size: 18px
+            line-height: 123%
+            margin-bottom: 7px
+        &__descr
+            font-size: 14px
+            line-height: 148.8%
+        &__price
+            font-size: 18px
+            line-height: 121.3%
+        &__btn
+            svg
+                width: 18px
+                height: 23px
